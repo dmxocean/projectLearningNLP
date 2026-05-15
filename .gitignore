@@ -1,47 +1,69 @@
+.gitignore
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-build/
+*.egg-info/
 dist/
-
-# Virtual environments
+build/
+.eggs/
+*.egg
+.env
 venv/
-ENV/
-env/
 .venv/
-.env/
+env/
 
-# Data files
-# Ignore all files in data/ but keep the directory structure
-data/raw/*
-data/processed/*
+# Model weights and checkpoints
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.tflite
 
-# Project specific artifacts
-models/*
-outputs/*
-logs/*.log
-logs/*
+# Logs and outputs
+logs/
+runs/
+outputs/
+wandb/
+experiments/
+results/
+*.csv
 
-.private
-.secrets
-.backup
+# Jupyter
+.ipynb_checkpoints/
 
-# Operating system files
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
 Thumbs.db
-ehthumbs.db
-Desktop.ini
 
-# IDE files
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-.project
-.pydevproject
+# Dot ignore files
+.*
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Checkpoints and inference exports
+checkpoints/
+*.trt
+*.engine
+*.plan
+*.bin
+
+# Numpy / pickle caches
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# HPC / SLURM
+slurm-*.out
+*.err
+
+# Paper PDF
+*.pdf

@@ -1,0 +1,79 @@
+Device: cuda
+  Reading /export/hhome/nlp203/NLP/data/pubhealth/train.tsv
+  Reading /export/hhome/nlp203/NLP/data/pubhealth/dev.tsv
+  Reading /export/hhome/nlp203/NLP/data/pubhealth/test.tsv
+  Loaded -- train=9804  val=1214  test=1233
+
+Dataset sizes: train=9804  val=1214  test=1233
+
+Building datasets (evidence ranking happens here)...
+Class weights: {'true': '0.169', 'false': '0.286', 'unproven': '2.947', 'mixture': '0.598'}
+Epoch 1/5  train_loss=1.2873  val_loss=1.0654  val_macro_f1=0.4536
+  ok New best saved  (val_f1=0.4536)
+Epoch 2/5  train_loss=1.0857  val_loss=1.1709  val_macro_f1=0.4446
+Epoch 3/5  train_loss=1.0332  val_loss=1.0760  val_macro_f1=0.4970
+  ok New best saved  (val_f1=0.4970)
+Epoch 4/5  train_loss=0.9873  val_loss=1.0797  val_macro_f1=0.4802
+Epoch 5/5  train_loss=0.9733  val_loss=1.0179  val_macro_f1=0.4903
+
+Best validation Macro-F1: 0.4970
+  Saved /export/hhome/nlp203/NLP/detection/training_curves.png
+
+=======================================================
+TEST RESULTS
+=======================================================
+              precision    recall  f1-score   support
+
+        true       0.88      0.67      0.76       599
+       false       0.56      0.51      0.53       388
+    unproven       0.14      0.33      0.20        45
+     mixture       0.38      0.60      0.47       201
+
+    accuracy                           0.60      1233
+   macro avg       0.49      0.53      0.49      1233
+weighted avg       0.67      0.60      0.62      1233
+
+Test Macro-F1: 0.4905
+
+--------------------------------------------------
+ABLATION: claim_only
+--------------------------------------------------
+Class weights: {'true': '0.169', 'false': '0.286', 'unproven': '2.947', 'mixture': '0.598'}
+  ep 1  val_f1=0.4224
+  ep 2  val_f1=0.4363
+  ep 3  val_f1=0.4345
+  -> test Macro-F1: 0.4211
+
+--------------------------------------------------
+ABLATION: claim+explanation
+--------------------------------------------------
+Class weights: {'true': '0.169', 'false': '0.286', 'unproven': '2.947', 'mixture': '0.598'}
+  ep 1  val_f1=0.4000
+  ep 2  val_f1=0.3797
+  ep 3  val_f1=0.4637
+  -> test Macro-F1: 0.4542
+
+--------------------------------------------------
+ABLATION: full_topk_evidence
+--------------------------------------------------
+Class weights: {'true': '0.169', 'false': '0.286', 'unproven': '2.947', 'mixture': '0.598'}
+  ep 1  val_f1=0.4071
+  ep 2  val_f1=0.5033
+  ep 3  val_f1=0.4963
+  -> test Macro-F1: 0.4920
+
+=======================================================
+ABLATION SUMMARY
+=======================================================
+  claim_only                      test_f1=0.4211
+  claim+explanation               test_f1=0.4542
+  full_topk_evidence              test_f1=0.4920
+
+Saving plots to /export/hhome/nlp203/NLP/detection ...
+  Saved /export/hhome/nlp203/NLP/detection/confusion_claim_only.png
+  Saved /export/hhome/nlp203/NLP/detection/f1_perclass_claim_only.png
+  Saved /export/hhome/nlp203/NLP/detection/confusion_claim+explanation.png
+  Saved /export/hhome/nlp203/NLP/detection/f1_perclass_claim+explanation.png
+  Saved /export/hhome/nlp203/NLP/detection/confusion_full_topk_evidence.png
+  Saved /export/hhome/nlp203/NLP/detection/f1_perclass_full_topk_evidence.png
+  Saved /export/hhome/nlp203/NLP/detection/macro_f1_comparison.png
