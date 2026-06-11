@@ -1,0 +1,18 @@
+{
+  "name": "focal_dynamic",
+  "description": "Per-class focal loss with softened weights and dynamic evidence",
+  "loss": "focal",
+  "use_class_weights": true,
+  "weight_temperature": 0.5,
+  "evidence_mode": "dynamic",
+  "top_k": null,
+  "gamma_per_class": [
+    1.0,
+    1.0,
+    3.0,
+    1.5
+  ],
+  "oversample_factors": null,
+  "epochs": 10,
+  "epochs_ablation": 5
+}

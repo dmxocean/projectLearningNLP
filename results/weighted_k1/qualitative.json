@@ -1,0 +1,1527 @@
+{
+  "experiment": "weighted_k1",
+  "notes": {
+    "n_test": 1233,
+    "accuracy": 0.605,
+    "mean_confidence_correct": 0.7816,
+    "mean_confidence_incorrect": 0.5898,
+    "per_class_recall": {
+      "true": 0.6561,
+      "false": 0.5438,
+      "unproven": 0.4667,
+      "mixture": 0.602
+    },
+    "top_confusion_pairs": [
+      {
+        "true": "false",
+        "pred": "mixture",
+        "count": 98
+      },
+      {
+        "true": "true",
+        "pred": "false",
+        "count": 90
+      },
+      {
+        "true": "true",
+        "pred": "mixture",
+        "count": 86
+      },
+      {
+        "true": "false",
+        "pred": "unproven",
+        "count": 54
+      },
+      {
+        "true": "mixture",
+        "pred": "false",
+        "count": 47
+      },
+      {
+        "true": "true",
+        "pred": "unproven",
+        "count": 30
+      },
+      {
+        "true": "false",
+        "pred": "true",
+        "count": 25
+      },
+      {
+        "true": "mixture",
+        "pred": "unproven",
+        "count": 23
+      },
+      {
+        "true": "unproven",
+        "pred": "false",
+        "count": 14
+      },
+      {
+        "true": "mixture",
+        "pred": "true",
+        "count": 10
+      }
+    ]
+  },
+  "buckets": {
+    "confident_errors": [
+      {
+        "idx": 9,
+        "claim": "The new supplement InteliGEN can boost brain function.",
+        "explanation": "Tens of thousands of holiday makers fled seaside towns on Australia’s east coast on Thursday as bushfires approached, and military ships and helicopters began rescuing thousands more trapped by the blazes.",
+        "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9917,
+          0.0033,
+          0.003,
+          0.002
+        ],
+        "confidence": 0.9917,
+        "correct": false
+      },
+      {
+        "idx": 879,
+        "claim": "300,000 pounds of rat meat sold as chicken wings across America.",
+        "explanation": "U.S. drugmaker Merck & Co Inc on Monday received approval from the European Commission to market (bit.ly/2NZ0QMB) its Ebola vaccine, less than a month after a European medicines panel backed the first-ever vaccine against the deadly virus.",
+        "evidence": "Since the middle of last year, the Congo Ebola outbreak has killed more than 2,100 people, making it the second-largest Ebola outbreak in history, after the 2013-16 epidemic in West Africa that killed more than 11,300. “The EU is supporting international efforts to combat Ebola on all fronts, from vaccine development to delivering humanitarian aid on the ground,” EU Ebola Coordinator Christos Stylianides said in a statement dated Nov. 10.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9917,
+          0.0034,
+          0.003,
+          0.002
+        ],
+        "confidence": 0.9917,
+        "correct": false
+      },
+      {
+        "idx": 1222,
+        "claim": "The UK is performing 240,000 Covid-19 tests a day.",
+        "explanation": "The U.S. investigation into hundreds of cases of life-threatening lung illnesses related to vaping has turned up a curious abnormality: Many of the victims had pockets of oil clogging up cells responsible for removing impurities in the lungs.",
+        "evidence": "Two years ago, she treated a patient with the same set of symptoms that are now being described across the country, and is now checking her lung cell samples to look for clues. “It’s possible that everybody who is vaping is at risk,” she said.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9917,
+          0.0034,
+          0.0029,
+          0.002
+        ],
+        "confidence": 0.9917,
+        "correct": false
+      },
+      {
+        "idx": 820,
+        "claim": "Winston Churchill was born in a ladies' room during a dance.",
+        "explanation": "Intriguing circumstances, but still a fair bit short of the more captivating rumor.",
+        "evidence": "The claim that British prime minister “Winston Churchill was born in a ladies’ room at a dance” has been circulating on Internet-based trivia lists for as long as we can remember.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9913,
+          0.0035,
+          0.0031,
+          0.0021
+        ],
+        "confidence": 0.9913,
+        "correct": false
+      },
+      {
+        "idx": 932,
+        "claim": "“Heidi Heitkamp: She rubber stamps the Washington liberal agenda.”",
+        "explanation": "A TV ad attacking Democratic Sen. Heidi Heitkamp stretches some facts to paint the incumbent North Dakota senator as a “rubber stamp” for the “Washington liberal agenda.”",
+        "evidence": "But Heitkamp was one of three Democrats who voted for it.After noting some of Heitkamp’s votes on immigration, the Iran nuclear deal and sanctuary cities, the ad concludes, “Heidi Heitkamp: She rubber stamps the Washington liberal agenda.” But that isn’t borne out by a full review of Heitkamp’s voting record.According to a FiveThirtyEight.com analysis last updated Aug. 27, Heitkamp has voted in sync with Trump’s position 55.3 percent of the time.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9904,
+          0.0039,
+          0.0034,
+          0.0023
+        ],
+        "confidence": 0.9904,
+        "correct": false
+      },
+      {
+        "idx": 1155,
+        "claim": "Viral posts claim that climate change is a \"made-up catastrophe.",
+        "explanation": "The U.S. Department of Justice examined using fentanyl in lethal injections as it prepared last year to resume executing condemned prisoners, a then untested use of the powerful, addictive opioid that has helped fuel a national crisis of overdose deaths.",
+        "evidence": "Witnesses said that before succumbing, Moore breathed heavily and coughed and that his face turned red, then purple.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9901,
+          0.0041,
+          0.0034,
+          0.0023
+        ],
+        "confidence": 0.9901,
+        "correct": false
+      },
+      {
+        "idx": 310,
+        "claim": "1,000 GP practices have closed since 2010.",
+        "explanation": "Malaysia will push its Southeast Asian neighbors to strengthen cooperation in finding a long-term solution for smog wafted across the region from forest fires in Indonesia, its environment minister said on Thursday.",
+        "evidence": "Malaysia’s Islamic Development Department issued the text of a special plea for divine intervention to disperse the smog, to be recited after weekly prayers on Friday by mosque congregations nationwide.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9892,
+          0.0046,
+          0.0037,
+          0.0025
+        ],
+        "confidence": 0.9892,
+        "correct": false
+      },
+      {
+        "idx": 558,
+        "claim": "Singer and actress Demi Lovato passed away in August 2018.",
+        "explanation": "As of this writing, Lovato remains (alive) at Cedars-Sinai hospital in Los Angeles and is expected to leave that facility within a week.",
+        "evidence": "In July 2018, pop singer Demi Lovato made headlines when she was hospitalized after an overdose.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.989,
+          0.0047,
+          0.0038,
+          0.0025
+        ],
+        "confidence": 0.989,
+        "correct": false
+      },
+      {
+        "idx": 374,
+        "claim": "Dutch teen author Noa Pothoven was voluntarily euthanized.",
+        "explanation": "If you are experiencing distress, please contact the National Suicide Prevention Lifeline at 1-800-273-8255 or visit them online here.",
+        "evidence": "In early June 2019, multiple English-language news outlets, from tabloids to ordinarily reliable national news media, reported that Noa Pothoven, a Dutch teenager and author, had ended her life via euthanasia after asking for and acquiring permission to do so from government officials in the Netherlands.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9882,
+          0.0052,
+          0.0039,
+          0.0027
+        ],
+        "confidence": 0.9882,
+        "correct": false
+      },
+      {
+        "idx": 270,
+        "claim": "“The NFL agreed to give the domestic terror group, BLM, 250 million dollars.”",
+        "explanation": "Johnson & Johnson’s greed led the drugmaker to use deceptive marketing to create an oversupply of painkillers that fueled the U.S. opioid epidemic, the state of Oklahoma alleged at the start of the first trial to result from lawsuits over the drug crisis.",
+        "evidence": "The non-jury trial came after Oklahoma resolved claims against OxyContin maker Purdue Pharma LP in March for $270 million and against Teva Pharmaceutical Industries Ltd on Sunday for $85 million, leaving only J&J as a defendant.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.985,
+          0.0066,
+          0.0049,
+          0.0036
+        ],
+        "confidence": 0.985,
+        "correct": false
+      },
+      {
+        "idx": 1075,
+        "claim": "Anticoagulants should be used to fight Covid-19.",
+        "explanation": "There is evidence supporting the use of anticoagulants in some Covid-19 patients.",
+        "evidence": "Anticoagulants should be used to fight Covid-19.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9835,
+          0.0075,
+          0.0052,
+          0.0038
+        ],
+        "confidence": 0.9835,
+        "correct": false
+      },
+      {
+        "idx": 611,
+        "claim": "Death is listed as a side effect of the MMR vaccine.",
+        "explanation": "Incorrect. The US MMR vaccine package insert, under “adverse reactions”, says death from various and sometimes unknown causes has been reported after vaccination but a causal relationship hasn’t been found in healthy individuals. Death isn’t listed under adverse reactions on either MMR vaccine used in the UK.",
+        "evidence": "Death is listed as a side effect of the MMR vaccine.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9803,
+          0.0088,
+          0.0064,
+          0.0045
+        ],
+        "confidence": 0.9803,
+        "correct": false
+      },
+      {
+        "idx": 479,
+        "claim": "Drinking one diet drink a day triples a person's risk of dementia and strokes.",
+        "explanation": "Some studies show an association between increased consumption of artificially sweetened beverages and stroke or dementia risk, but that does not mean one causes the other.",
+        "evidence": "Drinking One Diet Drink A Day Can Triple Risk Of Dementia And Strokes.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9779,
+          0.01,
+          0.0068,
+          0.0052
+        ],
+        "confidence": 0.9779,
+        "correct": false
+      },
+      {
+        "idx": 774,
+        "claim": "A video shows a bolt of lightning striking a river, sparking a large explosion.",
+        "explanation": "While we do not advise hopping into an outdoor pool during a raging thunderstorm, we can assure you that should you disregard that advice and lightning strikes during your swim, it may be exceedingly unpleasant — but it won’t look like these videos.",
+        "evidence": "This video, however, does not actually show a bolt of lightning striking a river.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9762,
+          0.0107,
+          0.0074,
+          0.0058
+        ],
+        "confidence": 0.9762,
+        "correct": false
+      },
+      {
+        "idx": 979,
+        "claim": "Henry Winkler Dead at 77 – A Huge Trump Supporter and Lifelong Gun Lover.",
+        "explanation": "An Egyptian masseur plays with fire to relieve his clients’ muscle pain at his spa in the Nile Delta governorate of Gharbeya.",
+        "evidence": "I used to be very lazy but this is no longer the case.”",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9745,
+          0.0117,
+          0.0077,
+          0.0061
+        ],
+        "confidence": 0.9745,
+        "correct": false
+      },
+      {
+        "idx": 180,
+        "claim": "The FBI foiled a Muslim Brotherhood plot to take over the U.S.",
+        "explanation": "Although Al-Qaradawi is a well-known figure in the Arabic-speaking world, we found no evidence to support the claim that law enforcement, either federal or local, raided a home in Annandale, Virginia in relation to an imminent 30-year plan for the Muslim Brotherhood to take over the United States.",
+        "evidence": "In early June 2017, conspiracy-oriented web sites began posting stories accompanied by a YouTube video claiming that the Federal Bureau of Investigation (FBI) had raided a house in Annandale, Virginia, and foiled a plot by the Muslim Brotherhood to take over the United States: The Muslim Brotherhood’s strategic 30-year plan for taking over America from within was a closely-guarded secret until the FBI raided a house in Annandale, Virginia, where agents found a disturbing bundle of documents containing a blueprint for the Muslim takeover of our country.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9733,
+          0.0123,
+          0.0088,
+          0.0057
+        ],
+        "confidence": 0.9733,
+        "correct": false
+      },
+      {
+        "idx": 842,
+        "claim": "A meme accurately describes 'The Nancy Pelosi Crime Family.'",
+        "explanation": "A 2015 Politico article reported Pelosi’s net worth at around $30 million.",
+        "evidence": "The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9624,
+          0.0212,
+          0.0084,
+          0.008
+        ],
+        "confidence": 0.9624,
+        "correct": false
+      },
+      {
+        "idx": 1144,
+        "claim": "The artificial sweetener Splenda was inadequately tested and is unsafe for human consumption.",
+        "explanation": "Claims that the artificial sweetener Splenda was inadequately tested and is unsafe for human consumption are at odds with numerous scientific studies.",
+        "evidence": "The fact that the human body does not metabolize sucralose for energy is a positive: it’s what makes sucralose non-caloric and therefore ideal as an artificial sweetener.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.957,
+          0.0201,
+          0.0127,
+          0.0101
+        ],
+        "confidence": 0.957,
+        "correct": false
+      },
+      {
+        "idx": 912,
+        "claim": "The American ambassador in Libya was raped and murdered during an attack on the U.S. Consulate.",
+        "explanation": "As of this writing, the U.S. government has still not released any post-mortem information documenting the nature of Ambassador Stevens’ death.",
+        "evidence": "The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9544,
+          0.0223,
+          0.0125,
+          0.0109
+        ],
+        "confidence": 0.9544,
+        "correct": false
+      },
+      {
+        "idx": 1000,
+        "claim": "HIV/AIDS among women is skyrocketing in Austin.",
+        "explanation": "Houston said HIV/AIDS among women is skyrocketing in Austin. That’s not so. While black women have persistently been diagnosed with HIV/AIDS at higher rates than other women, HIV/AIDS incidence rates for Travis County women declined for most of the past decade.",
+        "evidence": "Our ruling Houston said HIV/AIDS among women is skyrocketing in Austin.",
+        "y_true": 1,
+        "y_true_label": "false",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.937,
+          0.0276,
+          0.0226,
+          0.0128
+        ],
+        "confidence": 0.937,
+        "correct": false
+      }
+    ],
+    "minority_errors": [
+      {
+        "idx": 9,
+        "claim": "The new supplement InteliGEN can boost brain function.",
+        "explanation": "Tens of thousands of holiday makers fled seaside towns on Australia’s east coast on Thursday as bushfires approached, and military ships and helicopters began rescuing thousands more trapped by the blazes.",
+        "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9917,
+          0.0033,
+          0.003,
+          0.002
+        ],
+        "confidence": 0.9917,
+        "correct": false
+      },
+      {
+        "idx": 1222,
+        "claim": "The UK is performing 240,000 Covid-19 tests a day.",
+        "explanation": "The U.S. investigation into hundreds of cases of life-threatening lung illnesses related to vaping has turned up a curious abnormality: Many of the victims had pockets of oil clogging up cells responsible for removing impurities in the lungs.",
+        "evidence": "Two years ago, she treated a patient with the same set of symptoms that are now being described across the country, and is now checking her lung cell samples to look for clues. “It’s possible that everybody who is vaping is at risk,” she said.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9917,
+          0.0034,
+          0.0029,
+          0.002
+        ],
+        "confidence": 0.9917,
+        "correct": false
+      },
+      {
+        "idx": 932,
+        "claim": "“Heidi Heitkamp: She rubber stamps the Washington liberal agenda.”",
+        "explanation": "A TV ad attacking Democratic Sen. Heidi Heitkamp stretches some facts to paint the incumbent North Dakota senator as a “rubber stamp” for the “Washington liberal agenda.”",
+        "evidence": "But Heitkamp was one of three Democrats who voted for it.After noting some of Heitkamp’s votes on immigration, the Iran nuclear deal and sanctuary cities, the ad concludes, “Heidi Heitkamp: She rubber stamps the Washington liberal agenda.” But that isn’t borne out by a full review of Heitkamp’s voting record.According to a FiveThirtyEight.com analysis last updated Aug. 27, Heitkamp has voted in sync with Trump’s position 55.3 percent of the time.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9904,
+          0.0039,
+          0.0034,
+          0.0023
+        ],
+        "confidence": 0.9904,
+        "correct": false
+      },
+      {
+        "idx": 310,
+        "claim": "1,000 GP practices have closed since 2010.",
+        "explanation": "Malaysia will push its Southeast Asian neighbors to strengthen cooperation in finding a long-term solution for smog wafted across the region from forest fires in Indonesia, its environment minister said on Thursday.",
+        "evidence": "Malaysia’s Islamic Development Department issued the text of a special plea for divine intervention to disperse the smog, to be recited after weekly prayers on Friday by mosque congregations nationwide.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9892,
+          0.0046,
+          0.0037,
+          0.0025
+        ],
+        "confidence": 0.9892,
+        "correct": false
+      },
+      {
+        "idx": 1075,
+        "claim": "Anticoagulants should be used to fight Covid-19.",
+        "explanation": "There is evidence supporting the use of anticoagulants in some Covid-19 patients.",
+        "evidence": "Anticoagulants should be used to fight Covid-19.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9835,
+          0.0075,
+          0.0052,
+          0.0038
+        ],
+        "confidence": 0.9835,
+        "correct": false
+      },
+      {
+        "idx": 479,
+        "claim": "Drinking one diet drink a day triples a person's risk of dementia and strokes.",
+        "explanation": "Some studies show an association between increased consumption of artificially sweetened beverages and stroke or dementia risk, but that does not mean one causes the other.",
+        "evidence": "Drinking One Diet Drink A Day Can Triple Risk Of Dementia And Strokes.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9779,
+          0.01,
+          0.0068,
+          0.0052
+        ],
+        "confidence": 0.9779,
+        "correct": false
+      },
+      {
+        "idx": 180,
+        "claim": "The FBI foiled a Muslim Brotherhood plot to take over the U.S.",
+        "explanation": "Although Al-Qaradawi is a well-known figure in the Arabic-speaking world, we found no evidence to support the claim that law enforcement, either federal or local, raided a home in Annandale, Virginia in relation to an imminent 30-year plan for the Muslim Brotherhood to take over the United States.",
+        "evidence": "In early June 2017, conspiracy-oriented web sites began posting stories accompanied by a YouTube video claiming that the Federal Bureau of Investigation (FBI) had raided a house in Annandale, Virginia, and foiled a plot by the Muslim Brotherhood to take over the United States: The Muslim Brotherhood’s strategic 30-year plan for taking over America from within was a closely-guarded secret until the FBI raided a house in Annandale, Virginia, where agents found a disturbing bundle of documents containing a blueprint for the Muslim takeover of our country.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9733,
+          0.0123,
+          0.0088,
+          0.0057
+        ],
+        "confidence": 0.9733,
+        "correct": false
+      },
+      {
+        "idx": 842,
+        "claim": "A meme accurately describes 'The Nancy Pelosi Crime Family.'",
+        "explanation": "A 2015 Politico article reported Pelosi’s net worth at around $30 million.",
+        "evidence": "The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9624,
+          0.0212,
+          0.0084,
+          0.008
+        ],
+        "confidence": 0.9624,
+        "correct": false
+      },
+      {
+        "idx": 912,
+        "claim": "The American ambassador in Libya was raped and murdered during an attack on the U.S. Consulate.",
+        "explanation": "As of this writing, the U.S. government has still not released any post-mortem information documenting the nature of Ambassador Stevens’ death.",
+        "evidence": "The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.9544,
+          0.0223,
+          0.0125,
+          0.0109
+        ],
+        "confidence": 0.9544,
+        "correct": false
+      },
+      {
+        "idx": 59,
+        "claim": "Spending on mental health went up by £575 million last year.",
+        "explanation": "This refers to the increase in spending by Clinical Commissioning Groups, but doesn’t account for inflation. Factoring that in the increase was around £368 million. It’s not a complete picture of mental health spending because other money is spent by the NHS on specialised mental health services. The figures on this aren’t regularly published.",
+        "evidence": "Spending on mental health went up by £575 million last year.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.8987,
+          0.0467,
+          0.0325,
+          0.0221
+        ],
+        "confidence": 0.8987,
+        "correct": false
+      },
+      {
+        "idx": 1212,
+        "claim": "Crohn’s patients respond to J&J’s Stelara in study.",
+        "explanation": "Without evaluating the evidence, it becomes one of those classic stories of a new therapy spun in the most favorable light possible based on a limited presentation at a medical meeting. Crohn’s disease is a terrible condition and more treatment options are needed. Thus this new research is welcome and we hope ustekinumab proves successful in phase 3 research. But in order to understand what the current study means, readers must know that data presented at conferences are preliminary and how independent experts assess it.",
+        "evidence": "We appreciated the Crohn’s Disease Activity Index (CDAI) thresholds for clinical response and remission, the subjects’ baseline CDAI scores, and the explanation of what a 100-point drop feels like to patients.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 2,
+        "y_pred_label": "unproven",
+        "probs": [
+          0.0187,
+          0.0619,
+          0.8823,
+          0.0371
+        ],
+        "confidence": 0.8823,
+        "correct": false
+      },
+      {
+        "idx": 326,
+        "claim": "A viral warning claims that a drug called burundanga on a business card poisoned a woman and advises people to beware of what has become known as “the zombie drug.”",
+        "explanation": "Beware of Burundanga on Business Cards",
+        "evidence": "Burundanga is a real drug, but a story about a woman poisoned by burundanga on a business card that has been circulating the web for years is unverified.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 2,
+        "y_pred_label": "unproven",
+        "probs": [
+          0.0226,
+          0.0513,
+          0.8485,
+          0.0777
+        ],
+        "confidence": 0.8485,
+        "correct": false
+      },
+      {
+        "idx": 325,
+        "claim": "A woman encountered kidnapping scouts at a Houston Target.",
+        "explanation": "Yet another Facebook user claimed she narrowly avoided human trafficking scouts at Target, this time in Houston.",
+        "evidence": "We also contacted police in Houston to find out whether there was any basis to the rumor, and an Investigative First Responder in the area of Houston where this Target is located told us: I checked every report written from the past week in my district as a part of my daily duties.",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.8384,
+          0.115,
+          0.022,
+          0.0245
+        ],
+        "confidence": 0.8384,
+        "correct": false
+      },
+      {
+        "idx": 963,
+        "claim": "Coronavirus strain COVID-19 can be treated by drinking warm water, among several other claims made online.",
+        "explanation": "Breaking Down The COVID-19 ‘Friend’s Uncle’s Guidance’ Meme",
+        "evidence": "As rumors quickly spread about purported myriad threats of a novel coronavirus strain known as COVID-19, a chain letter-style post purportedly containing medical advice about both the symptoms and treatments for the disease was spread heavily on Facebook despite relying (as these types of posts almost inevitably do) on third-hand, uncited “advice.”The post, which has been shared more than 291,000 times on the platform since being published on February 27 2020, is presented as an “important announcement”:Last evening dining out with friends, one of their uncles, who’s graduated with a master’s degree and who worked in Shenzhen Hospital (Guangdong Province, China) sent him the following notes on Coronavirus for guidance:The post then offers a list full of claims:We spoke to Dr.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 2,
+        "y_pred_label": "unproven",
+        "probs": [
+          0.0261,
+          0.0891,
+          0.7985,
+          0.0863
+        ],
+        "confidence": 0.7985,
+        "correct": false
+      },
+      {
+        "idx": 1124,
+        "claim": "A new gun law taking effect in California on January 1, 2016, will allow police to seize guns without prior notice.",
+        "explanation": "California Gun Law Takes Effect January 2016, Guns to be Confiscated Without Notice",
+        "evidence": "It’s true that a California gun law that goes into effect in January will allow police to seize guns from their owners for up to 21 days if a court agrees that a gun owner is a threat to themselves or others.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 2,
+        "y_pred_label": "unproven",
+        "probs": [
+          0.0342,
+          0.0743,
+          0.7783,
+          0.1132
+        ],
+        "confidence": 0.7783,
+        "correct": false
+      },
+      {
+        "idx": 883,
+        "claim": "A meme accurately describes the arc of Bernie Sanders' (financial) life.",
+        "explanation": "All in all, that sounds like quite an impressive career achievement for anyone — regardless of net worth.",
+        "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 0,
+        "y_pred_label": "true",
+        "probs": [
+          0.7782,
+          0.1324,
+          0.0436,
+          0.0458
+        ],
+        "confidence": 0.7782,
+        "correct": false
+      },
+      {
+        "idx": 1024,
+        "claim": "Italy will stop caring for elderly patients who are infected with novel coronavirus strain COVID-19.",
+        "explanation": "Has Italy Stopped Treating COVID-19 in the Elderly?",
+        "evidence": "As Italy grappled with the spread of COVID-19, American Facebook users took that as their opportunity to insult a national health service. “Italy has decided NOT to treat their elderly for this virus !!!!",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 2,
+        "y_pred_label": "unproven",
+        "probs": [
+          0.0305,
+          0.0783,
+          0.7755,
+          0.1156
+        ],
+        "confidence": 0.7755,
+        "correct": false
+      },
+      {
+        "idx": 664,
+        "claim": "Rumors that Keurig coffee machines harbor bacteria have been circulating the web for years.",
+        "explanation": "Health Dangers of Keurig Coffee Machines",
+        "evidence": "Mold and bacteria grows on and in Keurig coffee machines, but the same is true for every other kitchen appliance.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 2,
+        "y_pred_label": "unproven",
+        "probs": [
+          0.0271,
+          0.1047,
+          0.7567,
+          0.1115
+        ],
+        "confidence": 0.7567,
+        "correct": false
+      },
+      {
+        "idx": 369,
+        "claim": "An employee at a women's health center in Bronx, New York, told an undercover pro-life activist she should dispose of a baby born alive after a failed abortion.",
+        "explanation": "What's undetermined: The exact meaning and intended meaning of the employee's remarks are open to interpretation and require further clarification.",
+        "evidence": "They also say to “flush” the baby down the toilet, or “put it in a bag” if she’s born alive. pic.twitter.com/GYxdpyEbDK — Lila Rose (@LilaGraceRose) February 20, 2019 The following day, Live Action tweeted the same video clip along with the message: “Watch this New York abortion worker tell our investigator to ‘flush’ the baby down the toilet or ‘put it in a bag’ if she’s born alive.” Watch this New York abortion worker tell our investigator to “flush” the baby down the toilet or “put it in a bag” if she’s born alive. pic.twitter.com/iXaVTxWjiS — Live Action (@LiveAction) February 21, 2019 On 21 February, the pro-life web site LifeNews.com reported that “An undercover video resurfaced this week of a New York abortion worker telling a woman to drown her baby in a toilet if the baby is born alive before the abortion is complete.” In each of these three prominent examples, Live Action, its president, and the website LifeNews.com claimed that the worker had advised the woman posing as a would-be patient to dispose of a living baby born after a failed abortion either by “flushing” or “drowning” the baby, or putting it “in a bag.” Whatever one’s overall view of the remarks made by the em [...]",
+        "y_true": 2,
+        "y_true_label": "unproven",
+        "y_pred": 3,
+        "y_pred_label": "mixture",
+        "probs": [
+          0.0256,
+          0.1205,
+          0.1189,
+          0.7351
+        ],
+        "confidence": 0.7351,
+        "correct": false
+      },
+      {
+        "idx": 286,
+        "claim": "On Senate confirmation of judicial nominees, “the Democrats are holding them up beyond anything -- beyond comprehension, they're holding them up.”",
+        "explanation": "A report issued by the nonpartisan Congressional Research Service indicates that while the average time for confirmation is historically high, federal judges appointed by President Trump were confirmed faster than in President Obama’s first year.",
+        "evidence": "In contrast, during the first years of the other three presidencies included in this report’s analysis, the cloture process was used once to reach an up-or-down vote on a circuit or district court nomination.”Even so, as we said, Trump’s nominees took less time to be confirmed than Obama’s.“Additionally,” CRS wrote, “the confirmation of nominees always occurred by roll call vote (rather than by unanimous consent or voice vote) and, for most circuit court nominations, was marked by a relatively high number of ‘nay’ votes among Senators not belonging to the President’s party.”We should also note that Trump usually couches his complaint about Democrats obstructing judicial nominees with a more general complain about Democrats slow-walking all of his government appointees.A joint project of the Partnership for Public Service and the Washington Post tracks roughly 600 “key executive branch nominations through the confirmation process.” According to the project’s data, as of May 17, the Senate had confirmed 426 of his appointments, with another 195 pending.",
+        "y_true": 3,
+        "y_true_label": "mixture",
+        "y_pred": 1,
+        "y_pred_label": "false",
+        "probs": [
+          0.0934,
+          0.7256,
+          0.01,
+          0.171
+        ],
+        "confidence": 0.7256,
+        "correct": false
+      }
+    ]
+  },
+  "per_class_examples": {
+    "unproven": {
+      "correct": [
+        {
+          "idx": 4,
+          "claim": "Employees at a Five Guys restaurant in Daphne, Alabama, refused to serve local police officers.",
+          "explanation": "What's undetermined: As of this writing, Five Guys has not explicitly corroborated the police version of events.",
+          "evidence": "On July 8, local television news channels WALA, WPMI, and WKRG broadcast reports that all relayed the claims of Daphne Police Department (PD) officers, who said they had entered the Five Guys restaurant at the Jubilee Square shopping center in Daphne on the previous evening, but employees there had refused to serve them.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.013,
+            0.0599,
+            0.672,
+            0.2551
+          ],
+          "confidence": 0.672,
+          "correct": true
+        },
+        {
+          "idx": 74,
+          "claim": "Last month, 20,000 migrant children were illegally brought into the United States. ... These children are used as human pawns by vicious coyotes and ruthless gangs.",
+          "explanation": "In a national address, President Donald Trump called on Congress to provide $5.7 billion for a border wall to address what he called a “crisis” on the border. The president made some false and misleading claims, and provided some facts without context.",
+          "evidence": "Including inadmissible individuals who lawfully tried to enter through a port of entry only increases the figure to over 1,400 per day.Trump suggested that 20,000 children were illegally brought into the country last month by “vicious coyotes and ruthless gangs,” but there’s no evidence of that in the available statistics.Trump, Jan. 8: Last month, 20,000 migrant children were illegally brought into the United States, a dramatic increase.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0942,
+            0.383,
+            0.4061,
+            0.1166
+          ],
+          "confidence": 0.4061,
+          "correct": true
+        },
+        {
+          "idx": 82,
+          "claim": "Talk radio host Rush Limbaugh was disqualified from the Vietnam-era draft due to a pilonidal cyst.",
+          "explanation": "There is, of course, a huge difference between draft evasion (or “draft dodging”) and draft avoidance: The former involves the use of unethical or illegal means (e.g., bribing a doctor to falsify a medical report, fleeing the country) to escape military service; the latter involves taking advantage of established legal means (e.g., college deferments, conscientious objector status) to avoid or delay military service. The issue discussed here is clearly not one of draft evasion, and the matter of who is justified in criticizing whom for not serving in Vietnam is a gray area to be hashed out in the public arena. The only conclusions drawn here are that Rush Limbaugh was ineligible for the draft due to a physical condition, that he had a pilonidal cyst, and that if there’s an explanation for [...]",
+          "evidence": "What was the physical problem that disqualified Rush Limbaugh from the draft?",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.035,
+            0.3346,
+            0.5102,
+            0.1201
+          ],
+          "confidence": 0.5102,
+          "correct": true
+        },
+        {
+          "idx": 138,
+          "claim": "Arminas Pileckas was murdered because he was trying to protect a Swedish girl from sexual harassment by a Syrian refugee.",
+          "explanation": "We have reached out to Swedish police to see if they can verify any additional details of the case and are awaiting a response.",
+          "evidence": "According to Expressen, Arminas Pileckas reportedly “protected a classmate against the 14-year-old and urged [that] the classmate be left alone.” But Expressen didn’t state that classmate’s gender or ethnicity and didn’t mention sexual harassment or assault.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.012,
+            0.0393,
+            0.9215,
+            0.0273
+          ],
+          "confidence": 0.9215,
+          "correct": true
+        },
+        {
+          "idx": 183,
+          "claim": "Russian president Vladimir Putin slammed Western countries for using GMOs and vaccines that slow evolution.",
+          "explanation": "In May 2016, the National Academies of Sciences, Engineering and Medicine released a report saying there was no proof that genetically-engineered food is linked to health or environmental harm. As of 2015, the Russian government had blocked the growing of GMO crops domestically and had restricted GMO-based imports, but we couldn’t find any statements made by Putin revealing his personal views on the subject.",
+          "evidence": "In January 2016, dubious web sites began posting articles quoting a statement attributed to Russian president Vladimir Putin that castigated the West for slowing human evolution with vaccines and genetically-modified foods (GMOs), words supposedly taken from a report circulated by the Security Council of the Russian Federation (SCRF).",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.068,
+            0.2006,
+            0.6061,
+            0.1253
+          ],
+          "confidence": 0.6061,
+          "correct": true
+        },
+        {
+          "idx": 194,
+          "claim": "Huggies Snug and Dry brand diapers commonly cause severe diaper rash and chemical burns on infants.",
+          "explanation": "Many explanations are possible for these types of phenomena other than the commonly attributed or seemingly obvious ones. As it did with Pampers, we suspect that was the case here",
+          "evidence": "An item (originally circulated in November 2013) about a child receiving severe chemical burns caused by Huggies Snug and Dry brand disposable diapers is quite similar, save for a change in brand names, to a piece circulated in 2010 about Pampers brand Dry Max diapers.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0199,
+            0.1144,
+            0.8133,
+            0.0524
+          ],
+          "confidence": 0.8133,
+          "correct": true
+        },
+        {
+          "idx": 238,
+          "claim": "You can be fined $999 and have your license suspended simply for holding a cell phone in your car as of January 2019.",
+          "explanation": "Can You Now Be Fined $999 for Holding a Phone in Your Car?",
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019!",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0381,
+            0.1193,
+            0.7183,
+            0.1243
+          ],
+          "confidence": 0.7183,
+          "correct": true
+        },
+        {
+          "idx": 251,
+          "claim": "Senator Harry Reid said that he was injured in a freak New Year’s Eve workout accident but actually suffered those injuries in a fight with his brother, Larry Reid.",
+          "explanation": "Harry Reid Was Injured in a Fight With His Brother – Unproven!",
+          "evidence": "This is an unproven conspiracy theory about how Democratic Senator Harry Reid was injured on New Year’s Eve.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0565,
+            0.2195,
+            0.5616,
+            0.1624
+          ],
+          "confidence": 0.5616,
+          "correct": true
+        },
+        {
+          "idx": 262,
+          "claim": "Donald Trump divorced Ivana Trump because her breast implants were imperfect, and he leaked that information to New York tabloids while they were married.",
+          "explanation": "It’s certainly possible that some version of the rumor may be true, but we haven’t unearthed any proof that Donald Trump ever directly, indirectly, or privately made the comments attributed to him about Ivana Trump’s breast implants, nor that he divorced her because of aesthetic differences about their suitability.",
+          "evidence": "He leaked stories to the New York tabloids about Ivana’s breast implants — they didn’t feel right.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0532,
+            0.218,
+            0.6584,
+            0.0705
+          ],
+          "confidence": 0.6584,
+          "correct": true
+        },
+        {
+          "idx": 444,
+          "claim": "A young boy fell asleep wearing a Spider-Man watch and woke up the next morning with second and third degree chemical burns on his wrist.",
+          "explanation": "Boy Suffered Chemical Burns from Spider-Man Watch – Investigation Pending!",
+          "evidence": "A Facebook user named Melanie Crinklaw posted photos of an Amazing Spider-Man watch and what appeared to be chemical burns on a young boy’s wrist on February 11, 2015, with the caption: “A friend of mine Karen Foster: This is the Spider-Man watch (bought from Target) Caden was wearing when he feel asleep last night.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0383,
+            0.158,
+            0.6943,
+            0.1095
+          ],
+          "confidence": 0.6943,
+          "correct": true
+        }
+      ],
+      "incorrect": [
+        {
+          "idx": 9,
+          "claim": "The new supplement InteliGEN can boost brain function.",
+          "explanation": "Tens of thousands of holiday makers fled seaside towns on Australia’s east coast on Thursday as bushfires approached, and military ships and helicopters began rescuing thousands more trapped by the blazes.",
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9917,
+            0.0033,
+            0.003,
+            0.002
+          ],
+          "confidence": 0.9917,
+          "correct": false
+        },
+        {
+          "idx": 310,
+          "claim": "1,000 GP practices have closed since 2010.",
+          "explanation": "Malaysia will push its Southeast Asian neighbors to strengthen cooperation in finding a long-term solution for smog wafted across the region from forest fires in Indonesia, its environment minister said on Thursday.",
+          "evidence": "Malaysia’s Islamic Development Department issued the text of a special plea for divine intervention to disperse the smog, to be recited after weekly prayers on Friday by mosque congregations nationwide.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9892,
+            0.0046,
+            0.0037,
+            0.0025
+          ],
+          "confidence": 0.9892,
+          "correct": false
+        },
+        {
+          "idx": 479,
+          "claim": "Drinking one diet drink a day triples a person's risk of dementia and strokes.",
+          "explanation": "Some studies show an association between increased consumption of artificially sweetened beverages and stroke or dementia risk, but that does not mean one causes the other.",
+          "evidence": "Drinking One Diet Drink A Day Can Triple Risk Of Dementia And Strokes.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9779,
+            0.01,
+            0.0068,
+            0.0052
+          ],
+          "confidence": 0.9779,
+          "correct": false
+        },
+        {
+          "idx": 180,
+          "claim": "The FBI foiled a Muslim Brotherhood plot to take over the U.S.",
+          "explanation": "Although Al-Qaradawi is a well-known figure in the Arabic-speaking world, we found no evidence to support the claim that law enforcement, either federal or local, raided a home in Annandale, Virginia in relation to an imminent 30-year plan for the Muslim Brotherhood to take over the United States.",
+          "evidence": "In early June 2017, conspiracy-oriented web sites began posting stories accompanied by a YouTube video claiming that the Federal Bureau of Investigation (FBI) had raided a house in Annandale, Virginia, and foiled a plot by the Muslim Brotherhood to take over the United States: The Muslim Brotherhood’s strategic 30-year plan for taking over America from within was a closely-guarded secret until the FBI raided a house in Annandale, Virginia, where agents found a disturbing bundle of documents containing a blueprint for the Muslim takeover of our country.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9733,
+            0.0123,
+            0.0088,
+            0.0057
+          ],
+          "confidence": 0.9733,
+          "correct": false
+        },
+        {
+          "idx": 912,
+          "claim": "The American ambassador in Libya was raped and murdered during an attack on the U.S. Consulate.",
+          "explanation": "As of this writing, the U.S. government has still not released any post-mortem information documenting the nature of Ambassador Stevens’ death.",
+          "evidence": "The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9544,
+            0.0223,
+            0.0125,
+            0.0109
+          ],
+          "confidence": 0.9544,
+          "correct": false
+        },
+        {
+          "idx": 59,
+          "claim": "Spending on mental health went up by £575 million last year.",
+          "explanation": "This refers to the increase in spending by Clinical Commissioning Groups, but doesn’t account for inflation. Factoring that in the increase was around £368 million. It’s not a complete picture of mental health spending because other money is spent by the NHS on specialised mental health services. The figures on this aren’t regularly published.",
+          "evidence": "Spending on mental health went up by £575 million last year.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.8987,
+            0.0467,
+            0.0325,
+            0.0221
+          ],
+          "confidence": 0.8987,
+          "correct": false
+        },
+        {
+          "idx": 325,
+          "claim": "A woman encountered kidnapping scouts at a Houston Target.",
+          "explanation": "Yet another Facebook user claimed she narrowly avoided human trafficking scouts at Target, this time in Houston.",
+          "evidence": "We also contacted police in Houston to find out whether there was any basis to the rumor, and an Investigative First Responder in the area of Houston where this Target is located told us: I checked every report written from the past week in my district as a part of my daily duties.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.8384,
+            0.115,
+            0.022,
+            0.0245
+          ],
+          "confidence": 0.8384,
+          "correct": false
+        },
+        {
+          "idx": 369,
+          "claim": "An employee at a women's health center in Bronx, New York, told an undercover pro-life activist she should dispose of a baby born alive after a failed abortion.",
+          "explanation": "What's undetermined: The exact meaning and intended meaning of the employee's remarks are open to interpretation and require further clarification.",
+          "evidence": "They also say to “flush” the baby down the toilet, or “put it in a bag” if she’s born alive. pic.twitter.com/GYxdpyEbDK — Lila Rose (@LilaGraceRose) February 20, 2019 The following day, Live Action tweeted the same video clip along with the message: “Watch this New York abortion worker tell our investigator to ‘flush’ the baby down the toilet or ‘put it in a bag’ if she’s born alive.” Watch this New York abortion worker tell our investigator to “flush” the baby down the toilet or “put it in a bag” if she’s born alive. pic.twitter.com/iXaVTxWjiS — Live Action (@LiveAction) February 21, 2019 On 21 February, the pro-life web site LifeNews.com reported that “An undercover video resurfaced this week of a New York abortion worker telling a woman to drown her baby in a toilet if the baby is born alive before the abortion is complete.” In each of these three prominent examples, Live Action, its president, and the website LifeNews.com claimed that the worker had advised the woman posing as a would-be patient to dispose of a living baby born after a failed abortion either by “flushing” or “drowning” the baby, or putting it “in a bag.” Whatever one’s overall view of the remarks made by the em [...]",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0256,
+            0.1205,
+            0.1189,
+            0.7351
+          ],
+          "confidence": 0.7351,
+          "correct": false
+        },
+        {
+          "idx": 753,
+          "claim": "The symptoms of Covid-19 are a sore throat lasting 3 or 4 days. The virus then blends into nasal fluid, enters the trachea and then the lungs causing pneumonia. With pneumonia comes high fever and difficulty breathing. The nasal congestion feels like you're drowning",
+          "explanation": "This is a roughly accurate description of the most common symptoms, although not everyone with Covid-19 gets pneumonia, and the symptoms may not come in this exact order or at these times. The NHS does not mention nasal congestion that ‘feels like drowning’ as a specific symptom for Covid-19.",
+          "evidence": "The virus then blends into nasal fluid, enters the trachea and then the lungs causing pneumonia.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 1,
+          "y_pred_label": "false",
+          "probs": [
+            0.1256,
+            0.7087,
+            0.0177,
+            0.148
+          ],
+          "confidence": 0.7087,
+          "correct": false
+        },
+        {
+          "idx": 17,
+          "claim": "Nathan Phillips falsely claimed to be a U.S. military veteran who served in the Vietnam War.",
+          "explanation": "What's true: Native American activist Nathan Phillips said he served in the U.S. Marines and told news outlets that he was a \"Vietnam-times\" or \"Vietnam-era\" veteran. What's false: Contrary to what multiple news reports initially stated, Nathan Phillips was not deployed to Vietnam at any time during his military service.",
+          "evidence": "Phillips’s military service.",
+          "y_true": 2,
+          "y_true_label": "unproven",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0314,
+            0.2137,
+            0.0624,
+            0.6925
+          ],
+          "confidence": 0.6925,
+          "correct": false
+        }
+      ]
+    },
+    "mixture": {
+      "correct": [
+        {
+          "idx": 8,
+          "claim": "The Westmoreland News ran a KKK ad on the front page of their newspaper in April 2018.",
+          "explanation": "What's true: The Westmoreland News did publish a copy of a KKK flyer in full on their front page as part of their reporting on KKK flyers being distributed in the region. What's false: The document was not run as an ad in the paper, but was intended to be an illustration for their coverage of the KKK.",
+          "evidence": "Because that was not the case here, however, we rank the claim that the newspaper “ran an ad” for the KKK as a mixture.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0272,
+            0.1578,
+            0.0962,
+            0.7189
+          ],
+          "confidence": 0.7189,
+          "correct": true
+        },
+        {
+          "idx": 16,
+          "claim": "Treating at the Earliest Sign of MS May Offer Long-Term Benefit",
+          "explanation": "This release summarizes a study that followed 11-year treatment outcomes of two groups of patients with early symptoms of multiple sclerosis (MS). All of the patients had experienced a first episode suggestive of MS, called clinically isolated syndrome (CIS), and a magnetic resonance imaging (MRI) scan suggesting MS. Up to 85 percent of people with CIS go on to develop MS. The two patient groups were randomized to either receive interferon beta-1 by injection immediately or receive a placebo for two years. After two years, the placebo group could receive their treatment of choice. The patients who received the drug immediately appeared to have fewer relapses over the 11 years of study, according to the lead author, but no advantages were observed in other patient outcomes such as overall d [...]",
+          "evidence": "What are the risks of treating early vs. the benefit?",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.1803,
+            0.276,
+            0.0034,
+            0.5403
+          ],
+          "confidence": 0.5403,
+          "correct": true
+        },
+        {
+          "idx": 20,
+          "claim": "Early in America's history, white Irish slaves outnumbered black slaves and endured worse treatment at the hands of their masters.",
+          "explanation": "What's true: Like impoverished people of other nationalities, many emigrated from Ireland to the Americas in the 17th and 18th centuries as indentured servants; a smaller number were forcibly banished into indentured servitude during the period of the English Civil Wars; indentured servants often lived and worked under harsh conditions and were sometimes treated cruelly. What's false: Unlike institutionalized chattel slavery, indentured servitude was neither hereditary nor lifelong; unlike black slaves, white indentured servants had legal rights; unlike black slaves, indentured servants weren't considered property.",
+          "evidence": "The most influential book to claim that there was ‘white slavery’ in Colonial America was Michael Hoffman’s They Were White and They Were Slaves: The Untold History of the Enslavement of Whites in Early America.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0225,
+            0.1077,
+            0.2057,
+            0.6641
+          ],
+          "confidence": 0.6641,
+          "correct": true
+        },
+        {
+          "idx": 44,
+          "claim": "People who undergo amputations can sign paperwork allowing them to take the removed limbs home after the procedure.",
+          "explanation": "What's true: Many hospitals have documentation allowing patients to take their limbs home following amputation procedures, barring certain health risks. What's false: If a virus or bacteria-related issue is associated with the affected limb's tissue, a patient may not be allowed to take the limb home. Three states also have laws banning private ownership of human organs.",
+          "evidence": "When asked how he was able to retain custody of his foot, he said: Most hospitals have policies where they will release your body parts to you because of some religions where you have to be buried whole, so I just signed the paperwork.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0192,
+            0.0837,
+            0.2324,
+            0.6647
+          ],
+          "confidence": 0.6647,
+          "correct": true
+        },
+        {
+          "idx": 56,
+          "claim": "Atheists are trying to ban Bibles from all hotel rooms.",
+          "explanation": "What's true: The Freedom from Religion Foundation (FFRF) requested Bibles be removed from public university hotel rooms and further lobbied the hospitality industry to offer \"Bible-free\" rooms in hotels. What's false: The FFRF demanded that all Bibles be removed from all hotel rooms.",
+          "evidence": "Add your name today: The image asserted simply that “angry atheists [were] trying to ban the Bible,” while the status update maintained a “radical group of atheists is demanding all hotels remove Bibles from their rooms,” and the linked petition claimed “[the] Freedom from Religion Foundation (a non-profit non-theist advocacy group) is demanding that the Bible … be banned from university hotel rooms.” The petition published on Facebook by the ACLJ specifically referenced “university hotel rooms,” which in turn suggested that the conflict in question pertained to religious materials and public institutions.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0386,
+            0.2567,
+            0.0467,
+            0.658
+          ],
+          "confidence": 0.658,
+          "correct": true
+        },
+        {
+          "idx": 75,
+          "claim": "Weight loss can be boosted fivefold thanks to novel mental imagery technique",
+          "explanation": "The news release focuses on a study reporting that overweight individuals who engaged in functional imagery training (FIT) were more successful at losing weight than individuals who engaged in a type of talk therapy called motivational interviewing (MI). However, the release does not answer many questions that are relevant to determining how useful FIT is for weight loss. For example, because the study does not appear to have collected information on diet or exercise, it’s not clear whether the difference in outcomes stems from differences in lifestyle choices made by study participants. It would have been helpful if the release (and study) had analyzed specifically how increased motivation and lifestyle choices can result in weight loss. The published study notes that data relating to “pa [...]",
+          "evidence": "Weight loss is not inherently good.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.1803,
+            0.276,
+            0.0034,
+            0.5403
+          ],
+          "confidence": 0.5403,
+          "correct": true
+        },
+        {
+          "idx": 97,
+          "claim": "A photograh showing a body of water with two distinct colors is a permanent location where the Mississippi River meets the Gulf of Mexico.",
+          "explanation": "What's true: A photograph shows a \"dead zone\" in the Gulf of Mexico created by the proximity of the Mississippi River. What's false: The two distinct colors in the photograph are not a natural or permanent fixture along the border of different bodies of water.",
+          "evidence": "On 23 April 2016, a photograph purportedly showing “where the Mississippi River meets the Gulf of Mexico” started circulating on Facebook along with the claim that these “two bodies of water never mix.” Subsequent postings of the image included an additional (misspelled) claim, that this lack of mixing is proof of God’s existence: The Mississippi River meets the Gulf of Mexico.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.026,
+            0.1071,
+            0.0996,
+            0.7673
+          ],
+          "confidence": 0.7673,
+          "correct": true
+        },
+        {
+          "idx": 102,
+          "claim": "U.S. Senator Kamala Harris bragged, boasted or laughed about prosecuting a homeless single mother in a January 2010 speech.",
+          "explanation": "What's true: Harris did laugh and speak with satisfaction about presenting the parents of truant children in San Francisco with the threat of criminal prosecution. What's false: Harris spoke with satisfaction about the success of an anti-truancy initiative in stopping truancy among the children of a specific homeless woman. The initiative used the threat of criminal prosecution, but its goal was to avoid the need for criminal prosecution by forcing parents of truant children into an administrative process that provided them with help and resources and significantly reduced rates of truancy in San Francisco.",
+          "evidence": "She smiles as she recalls how she instructed her subordinates to ‘look really mean’ so that the mother would take the threat of jail seriously.” The website Grit Post published an article with the headline “Kamala Harris Once Bragged About Prosecuting a Homeless Single Mom Working Two Jobs.” The January 2019 controversy centered on a speech Harris gave on 14 January 2010 at the California Commonwealth Club, at a time when she was the district attorney (D.A.) of San Francisco and was running for California attorney general.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.0221,
+            0.0931,
+            0.1465,
+            0.7382
+          ],
+          "confidence": 0.7382,
+          "correct": true
+        },
+        {
+          "idx": 135,
+          "claim": "Glaxo Touts Experimental Tykerb As Effective Breast-Cancer Treament",
+          "explanation": "The story discusses the preliminary results of lapatinib (trade name Tykerb) and chemotherapy in HER-2 positive metastatic breast cancer patients. Patients who took lapatinib and the chemotherapy drug Xeloda remained stable (i.e. cancer did not spread further) nearly twice as long as patients who only had chemotherapy (8.5 months vs. 4.5 months). However, many drugs are effective in prolonging response in metastatic disease without impacting length of life. It would be good to get survival data to back up these claims, or at least provide data on quality of life to see whether the addition of lapatinib made a difference and how much. Additionally, the results of this trial have not been scrutinized in a peer-reviewed medical journal. The story provides a powerful, but premature suggestion [...]",
+          "evidence": "Tykerb (generic name lapatinib) is a new drug for the treatment of metastatic HER-2 positive breast cancer.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.1793,
+            0.2756,
+            0.0035,
+            0.5417
+          ],
+          "confidence": 0.5417,
+          "correct": true
+        },
+        {
+          "idx": 148,
+          "claim": "In Small Test, Experimental Prostate Drug Shows Promise",
+          "explanation": "Notwithstanding the headline, this is a story about two drugs for the treatment of advanced prostate cancer – Provenge, a drug recently approved by the FDA for the treatment of advanced prostate cancer and XL184, a compound currently under study. Combining the information for these treatments is a bit confusing. The news about XL184 reflected results which at that point had not yet been presented at a cancer conference in Berlin. While indicating that it is too early to say whether XL184 actually affects the cancer, the story should have reminded readers of the importance of things like quality of life and survival time. And there isn’t evidence about those factors yet with XL184. At issue is that, while advanced prostate cancer is a challenge, not all men with advanced prostate cancer wou [...]",
+          "evidence": "And while indicating that Provenge helped men with advanced prostate cancer live 4 months longer, there was no mention of any harms associated with use of this drug.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 3,
+          "y_pred_label": "mixture",
+          "probs": [
+            0.1799,
+            0.2754,
+            0.0034,
+            0.5413
+          ],
+          "confidence": 0.5413,
+          "correct": true
+        }
+      ],
+      "incorrect": [
+        {
+          "idx": 1222,
+          "claim": "The UK is performing 240,000 Covid-19 tests a day.",
+          "explanation": "The U.S. investigation into hundreds of cases of life-threatening lung illnesses related to vaping has turned up a curious abnormality: Many of the victims had pockets of oil clogging up cells responsible for removing impurities in the lungs.",
+          "evidence": "Two years ago, she treated a patient with the same set of symptoms that are now being described across the country, and is now checking her lung cell samples to look for clues. “It’s possible that everybody who is vaping is at risk,” she said.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9917,
+            0.0034,
+            0.0029,
+            0.002
+          ],
+          "confidence": 0.9917,
+          "correct": false
+        },
+        {
+          "idx": 932,
+          "claim": "“Heidi Heitkamp: She rubber stamps the Washington liberal agenda.”",
+          "explanation": "A TV ad attacking Democratic Sen. Heidi Heitkamp stretches some facts to paint the incumbent North Dakota senator as a “rubber stamp” for the “Washington liberal agenda.”",
+          "evidence": "But Heitkamp was one of three Democrats who voted for it.After noting some of Heitkamp’s votes on immigration, the Iran nuclear deal and sanctuary cities, the ad concludes, “Heidi Heitkamp: She rubber stamps the Washington liberal agenda.” But that isn’t borne out by a full review of Heitkamp’s voting record.According to a FiveThirtyEight.com analysis last updated Aug. 27, Heitkamp has voted in sync with Trump’s position 55.3 percent of the time.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9904,
+            0.0039,
+            0.0034,
+            0.0023
+          ],
+          "confidence": 0.9904,
+          "correct": false
+        },
+        {
+          "idx": 1075,
+          "claim": "Anticoagulants should be used to fight Covid-19.",
+          "explanation": "There is evidence supporting the use of anticoagulants in some Covid-19 patients.",
+          "evidence": "Anticoagulants should be used to fight Covid-19.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9835,
+            0.0075,
+            0.0052,
+            0.0038
+          ],
+          "confidence": 0.9835,
+          "correct": false
+        },
+        {
+          "idx": 842,
+          "claim": "A meme accurately describes 'The Nancy Pelosi Crime Family.'",
+          "explanation": "A 2015 Politico article reported Pelosi’s net worth at around $30 million.",
+          "evidence": "The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.9624,
+            0.0212,
+            0.0084,
+            0.008
+          ],
+          "confidence": 0.9624,
+          "correct": false
+        },
+        {
+          "idx": 1212,
+          "claim": "Crohn’s patients respond to J&J’s Stelara in study.",
+          "explanation": "Without evaluating the evidence, it becomes one of those classic stories of a new therapy spun in the most favorable light possible based on a limited presentation at a medical meeting. Crohn’s disease is a terrible condition and more treatment options are needed. Thus this new research is welcome and we hope ustekinumab proves successful in phase 3 research. But in order to understand what the current study means, readers must know that data presented at conferences are preliminary and how independent experts assess it.",
+          "evidence": "We appreciated the Crohn’s Disease Activity Index (CDAI) thresholds for clinical response and remission, the subjects’ baseline CDAI scores, and the explanation of what a 100-point drop feels like to patients.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0187,
+            0.0619,
+            0.8823,
+            0.0371
+          ],
+          "confidence": 0.8823,
+          "correct": false
+        },
+        {
+          "idx": 326,
+          "claim": "A viral warning claims that a drug called burundanga on a business card poisoned a woman and advises people to beware of what has become known as “the zombie drug.”",
+          "explanation": "Beware of Burundanga on Business Cards",
+          "evidence": "Burundanga is a real drug, but a story about a woman poisoned by burundanga on a business card that has been circulating the web for years is unverified.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0226,
+            0.0513,
+            0.8485,
+            0.0777
+          ],
+          "confidence": 0.8485,
+          "correct": false
+        },
+        {
+          "idx": 963,
+          "claim": "Coronavirus strain COVID-19 can be treated by drinking warm water, among several other claims made online.",
+          "explanation": "Breaking Down The COVID-19 ‘Friend’s Uncle’s Guidance’ Meme",
+          "evidence": "As rumors quickly spread about purported myriad threats of a novel coronavirus strain known as COVID-19, a chain letter-style post purportedly containing medical advice about both the symptoms and treatments for the disease was spread heavily on Facebook despite relying (as these types of posts almost inevitably do) on third-hand, uncited “advice.”The post, which has been shared more than 291,000 times on the platform since being published on February 27 2020, is presented as an “important announcement”:Last evening dining out with friends, one of their uncles, who’s graduated with a master’s degree and who worked in Shenzhen Hospital (Guangdong Province, China) sent him the following notes on Coronavirus for guidance:The post then offers a list full of claims:We spoke to Dr.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0261,
+            0.0891,
+            0.7985,
+            0.0863
+          ],
+          "confidence": 0.7985,
+          "correct": false
+        },
+        {
+          "idx": 1124,
+          "claim": "A new gun law taking effect in California on January 1, 2016, will allow police to seize guns without prior notice.",
+          "explanation": "California Gun Law Takes Effect January 2016, Guns to be Confiscated Without Notice",
+          "evidence": "It’s true that a California gun law that goes into effect in January will allow police to seize guns from their owners for up to 21 days if a court agrees that a gun owner is a threat to themselves or others.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0342,
+            0.0743,
+            0.7783,
+            0.1132
+          ],
+          "confidence": 0.7783,
+          "correct": false
+        },
+        {
+          "idx": 883,
+          "claim": "A meme accurately describes the arc of Bernie Sanders' (financial) life.",
+          "explanation": "All in all, that sounds like quite an impressive career achievement for anyone — regardless of net worth.",
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements.",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 0,
+          "y_pred_label": "true",
+          "probs": [
+            0.7782,
+            0.1324,
+            0.0436,
+            0.0458
+          ],
+          "confidence": 0.7782,
+          "correct": false
+        },
+        {
+          "idx": 1024,
+          "claim": "Italy will stop caring for elderly patients who are infected with novel coronavirus strain COVID-19.",
+          "explanation": "Has Italy Stopped Treating COVID-19 in the Elderly?",
+          "evidence": "As Italy grappled with the spread of COVID-19, American Facebook users took that as their opportunity to insult a national health service. “Italy has decided NOT to treat their elderly for this virus !!!!",
+          "y_true": 3,
+          "y_true_label": "mixture",
+          "y_pred": 2,
+          "y_pred_label": "unproven",
+          "probs": [
+            0.0305,
+            0.0783,
+            0.7755,
+            0.1156
+          ],
+          "confidence": 0.7755,
+          "correct": false
+        }
+      ]
+    }
+  }
+}

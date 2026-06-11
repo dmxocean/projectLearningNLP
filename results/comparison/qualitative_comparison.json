@@ -1,0 +1,3039 @@
+{
+  "experiments": [
+    {
+      "name": "weighted_k1",
+      "full_macro_f1": 0.5102595038102006
+    },
+    {
+      "name": "focal_dynamic",
+      "full_macro_f1": 0.4928126970779334
+    },
+    {
+      "name": "weighted_dynamic",
+      "full_macro_f1": 0.4912953747120735
+    },
+    {
+      "name": "focal_oversample",
+      "full_macro_f1": 0.49124127863609157
+    },
+    {
+      "name": "weighted_k3",
+      "full_macro_f1": 0.4870482997194251
+    },
+    {
+      "name": "weighted_k5",
+      "full_macro_f1": 0.4772448076863913
+    },
+    {
+      "name": "baseline",
+      "full_macro_f1": 0.4341459533780803
+    }
+  ],
+  "n_examples": 30,
+  "selection": {
+    "divergent": 24,
+    "consensus_failure": 6
+  },
+  "examples": [
+    {
+      "idx": 120,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "Photographs show a new Chinese aircraft carrier.",
+      "explanation": "Do photographs show a new Chinese aircraft carrier?",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.3949,
+          "probs": [
+            0.2545,
+            0.3949,
+            0.1063,
+            0.2444
+          ],
+          "correct": false,
+          "evidence": "Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.4133,
+          "probs": [
+            0.4133,
+            0.2748,
+            0.159,
+            0.1529
+          ],
+          "correct": false,
+          "evidence": "Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction. There are reports the 1st Chinese aircraft carrier is under construction and could enter service around 2015 or earlier."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "true",
+          "confidence": 0.6394,
+          "probs": [
+            0.6394,
+            0.1726,
+            0.1326,
+            0.0554
+          ],
+          "correct": false,
+          "evidence": "Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction. There are reports the 1st Chinese aircraft carrier is under construction and could enter service around 2015 or earlier."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "mixture",
+          "confidence": 0.3285,
+          "probs": [
+            0.1617,
+            0.2398,
+            0.27,
+            0.3285
+          ],
+          "correct": false,
+          "evidence": "Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction. There are reports the 1st Chinese aircraft carrier is under construction and could enter service around 2015 or earlier."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4729,
+          "probs": [
+            0.1578,
+            0.4729,
+            0.115,
+            0.2544
+          ],
+          "correct": false,
+          "evidence": "Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction. The origin of these images is unknown to us and may have no connection with the Chinese military: Example: [Collected via e-mail, August 2011] China’s new aircraft carrier! There are reports the 1st Chinese aircraft carrier is under construction and could enter service around 2015 or earlier."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.3462,
+          "probs": [
+            0.1758,
+            0.3462,
+            0.3104,
+            0.1676
+          ],
+          "correct": false,
+          "evidence": "In August 2011, China’s first aircraft carrier began sea trials. Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction. The origin of these images is unknown to us and may have no connection with the Chinese military: Example: [Collected via e-mail, August 2011] China’s new aircraft carrier! There are reports the 1st Chinese aircraft carrier is under construction and could enter service around 2015 or earlier. ADD THE NEW CHINESE STEALTH FIGHTER BOMBER (NAVAL VERSION ALREADY FLIGHT TESTING) IN THE MIX AND YOU HAVE THE MAKINGS OF A FORMIDABLE WEAPONS SYSTEM INDEED.."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.9857,
+          "probs": [
+            0.9857,
+            0.0088,
+            0.0034,
+            0.0021
+          ],
+          "correct": false,
+          "evidence": "Given that this ship is a refurbished former Soviet aircraft carrier, not the catamaran-style design shown here, and China reportedly plans to build “up to three additional clones of the carrier” in the long term, it’s unlikely the pictures displayed below are conceptual images of “a new ultra modern Chinese design concept aircraft carrier” currently under construction. There are reports the 1st Chinese aircraft carrier is under construction and could enter service around 2015 or earlier."
+        }
+      ]
+    },
+    {
+      "idx": 74,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "Last month, 20,000 migrant children were illegally brought into the United States. ... These children are used as human pawns by vicious coyotes and ruthless gangs.",
+      "explanation": "In a national address, President Donald Trump called on Congress to provide $5.7 billion for a border wall to address what he called a “crisis” on the border. The president made some false and misleading claims, and provided some facts without context.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.4061,
+          "probs": [
+            0.0942,
+            0.383,
+            0.4061,
+            0.1166
+          ],
+          "correct": true,
+          "evidence": "Including inadmissible individuals who lawfully tried to enter through a port of entry only increases the figure to over 1,400 per day.Trump suggested that 20,000 children were illegally brought into the country last month by “vicious coyotes and ruthless gangs,” but there’s no evidence of that in the available statistics.Trump, Jan. 8: Last month, 20,000 migrant children were illegally brought into the United States, a dramatic increase."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.3945,
+          "probs": [
+            0.1965,
+            0.3945,
+            0.2129,
+            0.1961
+          ],
+          "correct": false,
+          "evidence": "So, if that’s the number the president is using, it refers to all children, not only those the administration suspects aren’t traveling with a legitimate parent or guardian."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.4214,
+          "probs": [
+            0.1952,
+            0.3748,
+            0.0085,
+            0.4214
+          ],
+          "correct": false,
+          "evidence": "So, if that’s the number the president is using, it refers to all children, not only those the administration suspects aren’t traveling with a legitimate parent or guardian."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4019,
+          "probs": [
+            0.3242,
+            0.4019,
+            0.185,
+            0.089
+          ],
+          "correct": false,
+          "evidence": "So, if that’s the number the president is using, it refers to all children, not only those the administration suspects aren’t traveling with a legitimate parent or guardian."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4097,
+          "probs": [
+            0.0921,
+            0.4097,
+            0.3045,
+            0.1937
+          ],
+          "correct": false,
+          "evidence": "Including inadmissible individuals who lawfully tried to enter through a port of entry only increases the figure to over 1,400 per day.Trump suggested that 20,000 children were illegally brought into the country last month by “vicious coyotes and ruthless gangs,” but there’s no evidence of that in the available statistics.Trump, Jan. 8: Last month, 20,000 migrant children were illegally brought into the United States, a dramatic increase. These children are used as human pawns by vicious coyotes and ruthless gangs.The data from Customs and Border Protection show that 25,172 family units were apprehended by the Border Patrol in November. “Family units” are individuals, including children and parents or legal guardians, that were caught with a family member.We wrote about the issue of adults trafficking children to the border in June, when Department of Homeland Security Secretary Kirstjen Nielsen claimed there had been a “314 percent increase” in such fraudulent cases over the previous five months. For fiscal 2018, 107,212 family units were apprehended.Update, Jan. 10: DHS spokeswoman Katie Waldman told the Washington Post Fact Checker that 19,313 children were apprehended on the So [...]"
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.3559,
+          "probs": [
+            0.1052,
+            0.3559,
+            0.3491,
+            0.1898
+          ],
+          "correct": false,
+          "evidence": "What are the facts?It’s true that in recent months the number of people caught trying to cross the U.S.-Mexico border illegally has risen, and was actually higher in November (the most recent month for which the U.S. Including inadmissible individuals who lawfully tried to enter through a port of entry only increases the figure to over 1,400 per day.Trump suggested that 20,000 children were illegally brought into the country last month by “vicious coyotes and ruthless gangs,” but there’s no evidence of that in the available statistics.Trump, Jan. 8: Last month, 20,000 migrant children were illegally brought into the United States, a dramatic increase. These children are used as human pawns by vicious coyotes and ruthless gangs.The data from Customs and Border Protection show that 25,172 family units were apprehended by the Border Patrol in November. “Family units” are individuals, including children and parents or legal guardians, that were caught with a family member.We wrote about the issue of adults trafficking children to the border in June, when Department of Homeland Security Secretary Kirstjen Nielsen claimed there had been a “314 percent increase” in such fraudulent cases o [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5489,
+          "probs": [
+            0.2067,
+            0.5489,
+            0.1452,
+            0.0992
+          ],
+          "correct": false,
+          "evidence": "So, if that’s the number the president is using, it refers to all children, not only those the administration suspects aren’t traveling with a legitimate parent or guardian."
+        }
+      ]
+    },
+    {
+      "idx": 487,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "A daily regimen of ingesting gin-soaked raisins will help relieve arthritis symptoms.",
+      "explanation": "Gin has been featured in non-raisin arthritis cures, including one that made the news in Baltimore in 1956. In that incident, an elderly Chinese man was bitten by one of the seven rattlesnakes he’d purchased for the purpose of creating an arthritis cure that involved pickling the serpents in gin for a year.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.6486,
+          "probs": [
+            0.0352,
+            0.252,
+            0.6486,
+            0.0642
+          ],
+          "correct": true,
+          "evidence": "We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.3882,
+          "probs": [
+            0.1331,
+            0.3882,
+            0.3077,
+            0.1711
+          ],
+          "correct": false,
+          "evidence": "The number of gin-marinated raisins to be consumed daily varies: some say it’s seven, others nine. We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis. H.B."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.6164,
+          "probs": [
+            0.1103,
+            0.6164,
+            0.0223,
+            0.251
+          ],
+          "correct": false,
+          "evidence": "The number of gin-marinated raisins to be consumed daily varies: some say it’s seven, others nine. We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis. H.B."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "true",
+          "confidence": 0.3825,
+          "probs": [
+            0.3825,
+            0.3766,
+            0.1755,
+            0.0654
+          ],
+          "correct": false,
+          "evidence": "The number of gin-marinated raisins to be consumed daily varies: some say it’s seven, others nine. We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis. H.B."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.3937,
+          "probs": [
+            0.0972,
+            0.3613,
+            0.3937,
+            0.1478
+          ],
+          "correct": true,
+          "evidence": "The number of gin-marinated raisins to be consumed daily varies: some say it’s seven, others nine. Those who’ve been asked to render a medical opinion on the potential for harm for the gin-soaked raisin regimen at least see little that could go amiss. We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.4038,
+          "probs": [
+            0.2022,
+            0.4038,
+            0.2033,
+            0.1907
+          ],
+          "correct": false,
+          "evidence": "Which brings us to the ingestion of gin-soaked raisins, a treatment that, although it has never been properly studied, has nevertheless gained adherents over the years. The number of gin-marinated raisins to be consumed daily varies: some say it’s seven, others nine. The duration of the soak varies, too; we’ve so far heard “one week,” “two weeks,” “until the raisins plump up,” and “when the gin has completely evaporated.” As to why gin-soaked raisins are supposed to work, we’ve heard various explanations, among them that juniper berries have anti-inflammatory properties and that grapes contain compounds called proanthocyanidins, which are thought to help fight infection and reduce inflammation, and resveratrol, a powerful antioxidant. Those who’ve been asked to render a medical opinion on the potential for harm for the gin-soaked raisin regimen at least see little that could go amiss. We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5352,
+          "probs": [
+            0.237,
+            0.5352,
+            0.1365,
+            0.0912
+          ],
+          "correct": false,
+          "evidence": "The number of gin-marinated raisins to be consumed daily varies: some say it’s seven, others nine. We found a similar note in a 1981 newspaper: I am trying white raisins soaked in gin for my arthritis. H.B."
+        }
+      ]
+    },
+    {
+      "idx": 912,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "The American ambassador in Libya was raped and murdered during an attack on the U.S. Consulate.",
+      "explanation": "As of this writing, the U.S. government has still not released any post-mortem information documenting the nature of Ambassador Stevens’ death.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.9544,
+          "probs": [
+            0.9544,
+            0.0223,
+            0.0125,
+            0.0109
+          ],
+          "correct": false,
+          "evidence": "The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4195,
+          "probs": [
+            0.1786,
+            0.4195,
+            0.1073,
+            0.2946
+          ],
+          "correct": false,
+          "evidence": "Examples:[Collected via e-mail, September 2012] The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. However Ambassador Stevens was brutally murdered. Dr. S. U.S."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4038,
+          "probs": [
+            0.0919,
+            0.4038,
+            0.2754,
+            0.229
+          ],
+          "correct": false,
+          "evidence": "Examples:[Collected via e-mail, September 2012] The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. However Ambassador Stevens was brutally murdered. Dr. S. U.S."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.6305,
+          "probs": [
+            0.0707,
+            0.2059,
+            0.6305,
+            0.0928
+          ],
+          "correct": true,
+          "evidence": "Examples:[Collected via e-mail, September 2012] The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. However Ambassador Stevens was brutally murdered. Dr. S. U.S."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4848,
+          "probs": [
+            0.0782,
+            0.4848,
+            0.3058,
+            0.1312
+          ],
+          "correct": false,
+          "evidence": "Examples:[Collected via e-mail, September 2012] The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. However Ambassador Stevens was brutally murdered."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.3529,
+          "probs": [
+            0.064,
+            0.3367,
+            0.3529,
+            0.2464
+          ],
+          "correct": true,
+          "evidence": "Examples:[Collected via e-mail, September 2012] The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The perpetrators of the massacre at the American Embassy in Libya savagely tortured the American Ambassador, Chris Stevens, violated sexually, before killing him. However Ambassador Stevens was brutally murdered. U.S. news accounts reported that Ambassador Stevens was not raped and killed by members of that mob, as claimed above: he was alive when brought to a hospital, he bore no external injuries, and he died of smoke inhalation from the fire started in the attack on the consulate: The ambassador, J."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5747,
+          "probs": [
+            0.1848,
+            0.5747,
+            0.1067,
+            0.1337
+          ],
+          "correct": false,
+          "evidence": "Examples:[Collected via e-mail, September 2012] The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. The American Ambassador in Libya was sexually raped before being killed, the American press has not said anything yet. However Ambassador Stevens was brutally murdered. Dr. S. U.S."
+        }
+      ]
+    },
+    {
+      "idx": 238,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "You can be fined $999 and have your license suspended simply for holding a cell phone in your car as of January 2019.",
+      "explanation": "Can You Now Be Fined $999 for Holding a Phone in Your Car?",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.7183,
+          "probs": [
+            0.0381,
+            0.1193,
+            0.7183,
+            0.1243
+          ],
+          "correct": true,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019!"
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.3089,
+          "probs": [
+            0.1321,
+            0.2982,
+            0.2609,
+            0.3089
+          ],
+          "correct": false,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019! This rulemaking restricts a CMV driver from holding a mobile device to make a call, or dialing by pressing more than a single button. However, that law went into effect in 2017 (not 2019) and involved a fine of around $150, not $999."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.5567,
+          "probs": [
+            0.0479,
+            0.1705,
+            0.5567,
+            0.2249
+          ],
+          "correct": true,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019! This rulemaking restricts a CMV driver from holding a mobile device to make a call, or dialing by pressing more than a single button. However, that law went into effect in 2017 (not 2019) and involved a fine of around $150, not $999."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.6676,
+          "probs": [
+            0.0437,
+            0.1541,
+            0.6676,
+            0.1346
+          ],
+          "correct": true,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019! This rulemaking restricts a CMV driver from holding a mobile device to make a call, or dialing by pressing more than a single button. However, that law went into effect in 2017 (not 2019) and involved a fine of around $150, not $999."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "mixture",
+          "confidence": 0.5197,
+          "probs": [
+            0.0499,
+            0.3008,
+            0.1296,
+            0.5197
+          ],
+          "correct": false,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019! We archived the latter’s January 2019 table, which says that in the state of California “persons are prohibited from driving a motor vehicle while holding and operating a phone or electronic communication device.” But we were unable to locate a state or federal law. However, that law went into effect in 2017 (not 2019) and involved a fine of around $150, not $999."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.5426,
+          "probs": [
+            0.0513,
+            0.2422,
+            0.5426,
+            0.164
+          ],
+          "correct": true,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019! Ouch…be aware folks! !No specific jurisdiction was mentioned in the post, and we were unable to find any firm or even speculative information about a law of that type which would have proposed or implemented in January 2019. However, a law involving holding cell phones while driving in Georgia involved a far smaller (USD$50) fine:It’s now illegal to hold your phone while driving in the state of Georgia, part of a sweeping hands-free law that went into effect [in July 2018]. We archived the latter’s January 2019 table, which says that in the state of California “persons are prohibited from driving a motor vehicle while holding and operating a phone or electronic communication device.” But we were unable to locate a state or federal law. However, that law went into effect in 2017 (not 2019) and involved a fine of around $150, not $999."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.4632,
+          "probs": [
+            0.2201,
+            0.4632,
+            0.1553,
+            0.1615
+          ],
+          "correct": false,
+          "evidence": "On January 7 2019, the following status update appeared on social media and quickly went viral:Caught using cell phone, or holding it while driving- $999 fine and 3 yr suspended license as of Jan.2019! This rulemaking restricts a CMV driver from holding a mobile device to make a call, or dialing by pressing more than a single button. However, that law went into effect in 2017 (not 2019) and involved a fine of around $150, not $999."
+        }
+      ]
+    },
+    {
+      "idx": 954,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "Women’s menstrual cycles synchronize when they live or work in close proximity to one another.",
+      "explanation": "We rate this claim as unproven due to an increasing lack of scientific evidence demonstrating that menstrual synchrony exists at all, but at the same time, we allow that the topic is complicated by myriad confounding variables.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.5787,
+          "probs": [
+            0.1235,
+            0.1882,
+            0.5787,
+            0.1096
+          ],
+          "correct": true,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.6067,
+          "probs": [
+            0.0668,
+            0.2509,
+            0.6067,
+            0.0756
+          ],
+          "correct": true,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom. Fully half the time then onsets should be closer than 7.5 days."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.8391,
+          "probs": [
+            0.0328,
+            0.1077,
+            0.8391,
+            0.0204
+          ],
+          "correct": true,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom. Fully half the time then onsets should be closer than 7.5 days."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.592,
+          "probs": [
+            0.0715,
+            0.2689,
+            0.592,
+            0.0675
+          ],
+          "correct": true,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom. Fully half the time then onsets should be closer than 7.5 days."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4427,
+          "probs": [
+            0.1697,
+            0.4427,
+            0.2361,
+            0.1515
+          ],
+          "correct": false,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom. This was discussed in a 2006 study titled “Women Do Not Synchronize Their Menstrual Cycles” which, true to its title, found no evidence for synchrony: Since the publication of the [1971 Nature] study, a number of studies have been conducted, with some apparently replicating the finding of synchrony, while others failed. Another 2006 study attempted to replicate the results of the first 1971 study with less problematic statistical approaches, finding: Women within units (pairs and triples) did not synchronize their menstrual cycles."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.7734,
+          "probs": [
+            0.7734,
+            0.1255,
+            0.0397,
+            0.0613
+          ],
+          "correct": false,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom. The literature provides far from conclusive evidence for the existence of menstrual synchrony at all, and increasingly researchers are finding methodological and theoretical flaws in the work with suggesting its existence. This was discussed in a 2006 study titled “Women Do Not Synchronize Their Menstrual Cycles” which, true to its title, found no evidence for synchrony: Since the publication of the [1971 Nature] study, a number of studies have been conducted, with some apparently replicating the finding of synchrony, while others failed. Another 2006 study attempted to replicate the results of the first 1971 study with less problematic statistical approaches, finding: Women within units (pairs and triples) did not synchronize their menstrual cycles. If two women both have 30-day menstrual cycles, the maximum they can be out of phase is 5 days, and, on average, their onsets date expected to be 7.5 days apart."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.7833,
+          "probs": [
+            0.7833,
+            0.1486,
+            0.0469,
+            0.0212
+          ],
+          "correct": false,
+          "evidence": "The idea that women living or working in proximity to one another synchronize their menstrual cycles is particularly persistent, and has now become accepted as conventional wisdom. Fully half the time then onsets should be closer than 7.5 days."
+        }
+      ]
+    },
+    {
+      "idx": 183,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "Russian president Vladimir Putin slammed Western countries for using GMOs and vaccines that slow evolution.",
+      "explanation": "In May 2016, the National Academies of Sciences, Engineering and Medicine released a report saying there was no proof that genetically-engineered food is linked to health or environmental harm. As of 2015, the Russian government had blocked the growing of GMO crops domestically and had restricted GMO-based imports, but we couldn’t find any statements made by Putin revealing his personal views on the subject.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.6061,
+          "probs": [
+            0.068,
+            0.2006,
+            0.6061,
+            0.1253
+          ],
+          "correct": true,
+          "evidence": "In January 2016, dubious web sites began posting articles quoting a statement attributed to Russian president Vladimir Putin that castigated the West for slowing human evolution with vaccines and genetically-modified foods (GMOs), words supposedly taken from a report circulated by the Security Council of the Russian Federation (SCRF)."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.3443,
+          "probs": [
+            0.1383,
+            0.3234,
+            0.3443,
+            0.194
+          ],
+          "correct": true,
+          "evidence": "President Putin doesn’t seem to hold an anti-vaccine stance."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.3728,
+          "probs": [
+            0.1637,
+            0.3571,
+            0.1064,
+            0.3728
+          ],
+          "correct": false,
+          "evidence": "President Putin doesn’t seem to hold an anti-vaccine stance."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.362,
+          "probs": [
+            0.1486,
+            0.2759,
+            0.362,
+            0.2136
+          ],
+          "correct": true,
+          "evidence": "President Putin doesn’t seem to hold an anti-vaccine stance."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.793,
+          "probs": [
+            0.0265,
+            0.1386,
+            0.793,
+            0.0419
+          ],
+          "correct": true,
+          "evidence": "In January 2016, dubious web sites began posting articles quoting a statement attributed to Russian president Vladimir Putin that castigated the West for slowing human evolution with vaccines and genetically-modified foods (GMOs), words supposedly taken from a report circulated by the Security Council of the Russian Federation (SCRF). The statement attributed to Putin claimed Western governments were subjugating their citizens with GMOs and vaccines, and Russia must “fight” that process: We as a species have the choice to continue to develop our bodies and brains in a healthy upward trajectory, or we can follow the Western example of recent decades and intentionally poison our population with genetically altered food, pharmaceuticals, vaccinations, and fast food that should be classified as a dangerous, addictive drug.” We must fight this. The giveaway was instead an effort to spur development in the region, according to the Global Post: President Vladimir Putin signed a law this month granting 2.5 acres of land to any Russian citizen who wants it."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.538,
+          "probs": [
+            0.0599,
+            0.2705,
+            0.538,
+            0.1316
+          ],
+          "correct": true,
+          "evidence": "In January 2016, dubious web sites began posting articles quoting a statement attributed to Russian president Vladimir Putin that castigated the West for slowing human evolution with vaccines and genetically-modified foods (GMOs), words supposedly taken from a report circulated by the Security Council of the Russian Federation (SCRF). The statement attributed to Putin claimed Western governments were subjugating their citizens with GMOs and vaccines, and Russia must “fight” that process: We as a species have the choice to continue to develop our bodies and brains in a healthy upward trajectory, or we can follow the Western example of recent decades and intentionally poison our population with genetically altered food, pharmaceuticals, vaccinations, and fast food that should be classified as a dangerous, addictive drug.” We must fight this. The rest of the story indicates the piece is little more than pro-Russian propaganda intended to appeal to Americans who subscribe to anti-scientific views about vaccines and foods and claims Russia is a major backer of organic farming: Russia under President Putin has been giving away land for free in the past few years to people willing to farm [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5008,
+          "probs": [
+            0.2412,
+            0.5008,
+            0.1291,
+            0.1289
+          ],
+          "correct": false,
+          "evidence": "President Putin doesn’t seem to hold an anti-vaccine stance."
+        }
+      ]
+    },
+    {
+      "idx": 857,
+      "category": "divergent",
+      "true_label": "unproven",
+      "claim": "Reports out of Texas that voting machines are automatically switching votes for Donald Trump to votes for Hillary Clinton have fueled speculation that the election is rigged.",
+      "explanation": "Texas Vote Switching Fuels Speculation About Rigged Election",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "mixture",
+          "confidence": 0.3941,
+          "probs": [
+            0.1202,
+            0.3465,
+            0.1392,
+            0.3941
+          ],
+          "correct": false,
+          "evidence": "Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.5261,
+          "probs": [
+            0.0842,
+            0.2917,
+            0.5261,
+            0.0981
+          ],
+          "correct": true,
+          "evidence": "Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th. They do not flip your vote. In conclusion, there were a few reports of vote flipping in Texas, but local officials chalked them up to voter error, not rigged voting machines."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.9005,
+          "probs": [
+            0.0121,
+            0.0659,
+            0.9005,
+            0.0216
+          ],
+          "correct": true,
+          "evidence": "Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th. They do not flip your vote. In conclusion, there were a few reports of vote flipping in Texas, but local officials chalked them up to voter error, not rigged voting machines."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.5232,
+          "probs": [
+            0.065,
+            0.2555,
+            0.5232,
+            0.1563
+          ],
+          "correct": true,
+          "evidence": "Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th. They do not flip your vote. In conclusion, there were a few reports of vote flipping in Texas, but local officials chalked them up to voter error, not rigged voting machines."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.6589,
+          "probs": [
+            0.0421,
+            0.2259,
+            0.6589,
+            0.0731
+          ],
+          "correct": true,
+          "evidence": "Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th. Texas Secretary of State Carlos Cascos, a Republican, also pushed back against claims of widespread voter fraud in the state, the San Antonio Express-News reports: Reacting to GOP presidential candidate Donald Trump’s persistent claims that the election is “rigged,” Cascos, a Republican, said that’s “highly unlikely, very improbable” in this state because each of Texas’ 254 counties has its own voting system, many of them with analog equipment. “I am not concerned about a nationwide vote-rigging epidemic. In conclusion, there were a few reports of vote flipping in Texas, but local officials chalked them up to voter error, not rigged voting machines."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.4776,
+          "probs": [
+            0.1041,
+            0.2679,
+            0.4776,
+            0.1504
+          ],
+          "correct": true,
+          "evidence": "Local officials say that scattered reports of vote switching in Texas are a result of voter error, and we couldn’t find any evidence of widespread election fraud going on. Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th. Texas Secretary of State Carlos Cascos, a Republican, also pushed back against claims of widespread voter fraud in the state, the San Antonio Express-News reports: Reacting to GOP presidential candidate Donald Trump’s persistent claims that the election is “rigged,” Cascos, a Republican, said that’s “highly unlikely, very improbable” in this state because each of Texas’ 254 counties has its own voting system, many of them with analog equipment. “I am not concerned about a nationwide vote-rigging epidemic. I certainly don’t believe that it’s going to happen in Texas,” Cascos said. “There’s just too many protocols … at local offices where votes get counted. In conclusion, there were a few reports of vote flipping in Texas, but local officials chalked them up to voter error, not rigged voting machines."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5697,
+          "probs": [
+            0.1884,
+            0.5697,
+            0.1657,
+            0.0762
+          ],
+          "correct": false,
+          "evidence": "Rumors that voting machines in Texas were automatically switching votes for Donald Trump to votes for Hillary Clinton started when early voting opened in Texas on October 24th. They do not flip your vote. In conclusion, there were a few reports of vote flipping in Texas, but local officials chalked them up to voter error, not rigged voting machines."
+        }
+      ]
+    },
+    {
+      "idx": 264,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "Every time somebody new gets the Ebola virus, it mutates.",
+      "explanation": "Beck warned that every time someone new gets the Ebola virus, it mutates. First, mutation and replication go hand in hand and infecting a new person doesn’t change that. But the much larger point is that Beck is painting mutations with a broad brush. Most of them hurt the virus and are automatic dead-ends. Of those that don’t actually hurt it, about two-thirds don’t change how Ebola functions. Of those that change how the virus functions, there’s no data to say whether the functional changes matter. However, the most recent study in West Africa found that many new varieties are not passed on to new victims. Beck’s statement about Ebola mutations is partially accurate but leaves out important details.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.5502,
+          "probs": [
+            0.0811,
+            0.2394,
+            0.5502,
+            0.1292
+          ],
+          "correct": false,
+          "evidence": "\"Every time somebody new gets the Ebola virus, it mutates."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.8545,
+          "probs": [
+            0.8545,
+            0.0941,
+            0.0331,
+            0.0183
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.5225,
+          "probs": [
+            0.2617,
+            0.5225,
+            0.1106,
+            0.1051
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "true",
+          "confidence": 0.4034,
+          "probs": [
+            0.4034,
+            0.3267,
+            0.2132,
+            0.0568
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "true",
+          "confidence": 0.6896,
+          "probs": [
+            0.6896,
+            0.2153,
+            0.0274,
+            0.0677
+          ],
+          "correct": false,
+          "evidence": "\"Every time somebody new gets the Ebola virus, it mutates. It isn’t a question of whether the virus mutates, but whether it adapts to new environments and spreads out in a new form. We wish to honor their memory.\" Our ruling Beck warned that every time someone new gets the Ebola virus, it mutates."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.3934,
+          "probs": [
+            0.1453,
+            0.3934,
+            0.219,
+            0.2424
+          ],
+          "correct": false,
+          "evidence": "\"Every time somebody new gets the Ebola virus, it mutates. Around PunditFact, we say there’s no way to check a prediction, but what we can do is dig deeper into Beck’s claim that the Ebola virus mutates with each new person it infects. Lauring explained that because Ebola is an RNA virus, each time it replicates in a person’s body, there’s a good chance that small changes will take place. It isn’t a question of whether the virus mutates, but whether it adapts to new environments and spreads out in a new form. We wish to honor their memory.\" Our ruling Beck warned that every time someone new gets the Ebola virus, it mutates."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.4354,
+          "probs": [
+            0.422,
+            0.4354,
+            0.0676,
+            0.0751
+          ],
+          "correct": false,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "idx": 548,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "Bats are pictured on the reverse of a U.S. quarter issued in 2020, an indicator that COVID-19 is connected to a government plot.",
+      "explanation": "Australian Prime Minister Scott Morrison issued a rare public apology on Friday and cut short a Hawaiian vacation in response to mounting public anger after two volunteer firefighters were killed battling bushfires sweeping the country’s east coast.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.5015,
+          "probs": [
+            0.5015,
+            0.2622,
+            0.1283,
+            0.108
+          ],
+          "correct": false,
+          "evidence": "Thursday’s declaration gave firefighters broad powers to control government resources, force evacuations, close roads and shut down utilities."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.419,
+          "probs": [
+            0.419,
+            0.38,
+            0.1003,
+            0.1007
+          ],
+          "correct": false,
+          "evidence": "Thursday’s declaration gave firefighters broad powers to control government resources, force evacuations, close roads and shut down utilities."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.7402,
+          "probs": [
+            0.0318,
+            0.1879,
+            0.7402,
+            0.0402
+          ],
+          "correct": false,
+          "evidence": "Thursday’s declaration gave firefighters broad powers to control government resources, force evacuations, close roads and shut down utilities."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.3547,
+          "probs": [
+            0.2498,
+            0.2703,
+            0.3547,
+            0.1252
+          ],
+          "correct": false,
+          "evidence": "Thursday’s declaration gave firefighters broad powers to control government resources, force evacuations, close roads and shut down utilities."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "true",
+          "confidence": 0.4803,
+          "probs": [
+            0.4803,
+            0.3392,
+            0.0697,
+            0.1108
+          ],
+          "correct": false,
+          "evidence": "Morrison’s conservative Liberal-National coalition government has been under sustained pressure to defend its climate change policies as it has downplayed links to the unprecedented early arrival and severity of this year’s bushfire season. In June, the government approved the construction of a new coal mine in Queensland state by India’s Adani Enterprises that is expected to produce 8 million to 10 million tonnes of thermal coal a year. Thursday’s declaration gave firefighters broad powers to control government resources, force evacuations, close roads and shut down utilities."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.4362,
+          "probs": [
+            0.1856,
+            0.4362,
+            0.189,
+            0.1892
+          ],
+          "correct": false,
+          "evidence": "Ten more firefighters were seriously injured on Thursday, with four in South Australia being treated for burns and smoke inhalation. “The worst imaginable set of circumstances unfolded,” New South Wales (NSW) Rural Fire Service (RFS) Commissioner Shane Fitzsimmons told reporters in Sydney. “This hurts everybody to the core.” Shortly after the pair’s deaths were announced, Morrison issued a statement saying he would return as soon as possible from a family holiday in Hawaii, a trip that has drawn sharp criticism in recent days as the wildfires crisis deepened. “I deeply regret any offence caused to any of the many Australians affected by the terrible bushfires by my taking leave with family at this time,” Morrison said in the statement. Morrison’s conservative Liberal-National coalition government has been under sustained pressure to defend its climate change policies as it has downplayed links to the unprecedented early arrival and severity of this year’s bushfire season. In June, the government approved the construction of a new coal mine in Queensland state by India’s Adani Enterprises that is expected to produce 8 million to 10 million tonnes of thermal coal a year. Thursday’s d [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5517,
+          "probs": [
+            0.2216,
+            0.5517,
+            0.1645,
+            0.0621
+          ],
+          "correct": false,
+          "evidence": "Thursday’s declaration gave firefighters broad powers to control government resources, force evacuations, close roads and shut down utilities."
+        }
+      ]
+    },
+    {
+      "idx": 595,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "US patent number CA2741523 is for swine flu.",
+      "explanation": "This is the application number for a patent for the Ebola virus made to the Canadian Intellectual Property Office. This patent has not been granted, and doesn’t mean the Ebola virus was created by someone.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.5682,
+          "probs": [
+            0.5682,
+            0.1785,
+            0.1743,
+            0.079
+          ],
+          "correct": false,
+          "evidence": "US patent number CA2741523 is for swine flu."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.4341,
+          "probs": [
+            0.4341,
+            0.3742,
+            0.0787,
+            0.113
+          ],
+          "correct": false,
+          "evidence": "US patent number 20120251502 is for Ebola. US patent number CA2741523 is for swine flu. There is a patent application number one digit away from this that mentions BSE, but is not a patent for BSE itself. The first number is the US patent number for the SARS virus. The second number is a patent for a SARS vaccine which has now expired. Claim 1 of 8"
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.3841,
+          "probs": [
+            0.2205,
+            0.3841,
+            0.0275,
+            0.3679
+          ],
+          "correct": false,
+          "evidence": "US patent number 20120251502 is for Ebola. US patent number CA2741523 is for swine flu. There is a patent application number one digit away from this that mentions BSE, but is not a patent for BSE itself. The first number is the US patent number for the SARS virus. The second number is a patent for a SARS vaccine which has now expired. Claim 1 of 8"
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.3022,
+          "probs": [
+            0.2475,
+            0.2789,
+            0.3022,
+            0.1715
+          ],
+          "correct": false,
+          "evidence": "US patent number 20120251502 is for Ebola. US patent number CA2741523 is for swine flu. There is a patent application number one digit away from this that mentions BSE, but is not a patent for BSE itself. The first number is the US patent number for the SARS virus. The second number is a patent for a SARS vaccine which has now expired. Claim 1 of 8"
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "true",
+          "confidence": 0.4506,
+          "probs": [
+            0.4506,
+            0.3551,
+            0.0814,
+            0.1128
+          ],
+          "correct": false,
+          "evidence": "US patent number 20120251502 is for Ebola. US patent number CA2741523 is for swine flu. The first number is the US patent number for the SARS virus."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.3826,
+          "probs": [
+            0.2463,
+            0.3826,
+            0.1923,
+            0.1788
+          ],
+          "correct": false,
+          "evidence": "US patent number 20120251502 is for Ebola. US patent number CA2741523 is for swine flu. There is a patent application number one digit away from this that mentions BSE, but is not a patent for BSE itself. The first number is the US patent number for the SARS virus. The second number is a patent for a SARS vaccine which has now expired."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.8269,
+          "probs": [
+            0.8269,
+            0.1217,
+            0.0266,
+            0.0248
+          ],
+          "correct": false,
+          "evidence": "US patent number 20120251502 is for Ebola. US patent number CA2741523 is for swine flu. There is a patent application number one digit away from this that mentions BSE, but is not a patent for BSE itself. The first number is the US patent number for the SARS virus. The second number is a patent for a SARS vaccine which has now expired. Claim 1 of 8"
+        }
+      ]
+    },
+    {
+      "idx": 842,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "A meme accurately describes 'The Nancy Pelosi Crime Family.'",
+      "explanation": "A 2015 Politico article reported Pelosi’s net worth at around $30 million.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.9624,
+          "probs": [
+            0.9624,
+            0.0212,
+            0.0084,
+            0.008
+          ],
+          "correct": false,
+          "evidence": "The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.3017,
+          "probs": [
+            0.2851,
+            0.3017,
+            0.1733,
+            0.2399
+          ],
+          "correct": false,
+          "evidence": "Peter C. Why? Congress. Was Nancy Pelosi’s son, Paul Pelosi, Jr., charged with securities fraud? So Nancy Pelosi’s son was involved with a company that was charged with securities fraud years later, he was never personally charged with a crime. Was Nancy Pelosi’s brother, Franklin D. Stella B. State’s Atty. The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.544,
+          "probs": [
+            0.0864,
+            0.158,
+            0.544,
+            0.2116
+          ],
+          "correct": false,
+          "evidence": "Peter C. Why? Congress. Was Nancy Pelosi’s son, Paul Pelosi, Jr., charged with securities fraud? So Nancy Pelosi’s son was involved with a company that was charged with securities fraud years later, he was never personally charged with a crime. Was Nancy Pelosi’s brother, Franklin D. Stella B. State’s Atty. The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.3431,
+          "probs": [
+            0.3057,
+            0.3431,
+            0.0739,
+            0.2773
+          ],
+          "correct": false,
+          "evidence": "Peter C. Why? Congress. Was Nancy Pelosi’s son, Paul Pelosi, Jr., charged with securities fraud? So Nancy Pelosi’s son was involved with a company that was charged with securities fraud years later, he was never personally charged with a crime. Was Nancy Pelosi’s brother, Franklin D. Stella B. State’s Atty. The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "true",
+          "confidence": 0.529,
+          "probs": [
+            0.529,
+            0.3416,
+            0.0083,
+            0.1211
+          ],
+          "correct": false,
+          "evidence": "An image graphic supposedly documenting the various misdeeds of the “Pelosi Crime Family” — including perjury, securities fraud, and simply being rich — was circulated on social media in January 2019. So Nancy Pelosi’s son was involved with a company that was charged with securities fraud years later, he was never personally charged with a crime. The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.8463,
+          "probs": [
+            0.8463,
+            0.0739,
+            0.0399,
+            0.0399
+          ],
+          "correct": false,
+          "evidence": "An image graphic supposedly documenting the various misdeeds of the “Pelosi Crime Family” — including perjury, securities fraud, and simply being rich — was circulated on social media in January 2019. Was Nancy Pelosi’s son, Paul Pelosi, Jr., charged with securities fraud? So Nancy Pelosi’s son was involved with a company that was charged with securities fraud years later, he was never personally charged with a crime. Was Nancy Pelosi’s brother, Franklin D. The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.468,
+          "probs": [
+            0.249,
+            0.468,
+            0.1383,
+            0.1447
+          ],
+          "correct": false,
+          "evidence": "Peter C. Why? Congress. Was Nancy Pelosi’s son, Paul Pelosi, Jr., charged with securities fraud? So Nancy Pelosi’s son was involved with a company that was charged with securities fraud years later, he was never personally charged with a crime. Was Nancy Pelosi’s brother, Franklin D. Stella B. State’s Atty. The “Pelosi Crime Family” meme refers to the highest possible figure within a very broad range and incorrectly refers to this number as Pelosi’s net worth."
+        }
+      ]
+    },
+    {
+      "idx": 883,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "A meme accurately describes the arc of Bernie Sanders' (financial) life.",
+      "explanation": "All in all, that sounds like quite an impressive career achievement for anyone — regardless of net worth.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.7782,
+          "probs": [
+            0.7782,
+            0.1324,
+            0.0436,
+            0.0458
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.363,
+          "probs": [
+            0.1292,
+            0.3254,
+            0.363,
+            0.1824
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements. This meme’s characterization of Sanders as a “loser” on this basis evinces a rather skewed perspective, however."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.5859,
+          "probs": [
+            0.0968,
+            0.5859,
+            0.1517,
+            0.1656
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements. This meme’s characterization of Sanders as a “loser” on this basis evinces a rather skewed perspective, however."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.4401,
+          "probs": [
+            0.1244,
+            0.2618,
+            0.4401,
+            0.1737
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements. This meme’s characterization of Sanders as a “loser” on this basis evinces a rather skewed perspective, however."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.6758,
+          "probs": [
+            0.057,
+            0.2143,
+            0.6758,
+            0.0529
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements. This meme’s characterization of Sanders as a “loser” on this basis evinces a rather skewed perspective, however. Unlike many others, Sanders might also be lauded for maintaining a rather plain life and not having enriched himself in public service (especially since candidates at the other end of the financial spectrum are frequently criticized for being “out of touch with the common man”)."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.3896,
+          "probs": [
+            0.1065,
+            0.3896,
+            0.307,
+            0.1969
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements. To wit: Never owned a business Right off, this meme begins with a rather nebulous criticism. This meme’s characterization of Sanders as a “loser” on this basis evinces a rather skewed perspective, however. Truman had virtually no net worth even after leaving the White House in 1953 and afterwards was largely dependent upon Congress’ finally establishing a pension for former presidents.) Bernie Sanders might equally be considered a “winner” for persevering at his goal of achieving a political career long after others might have given up, and for succeeding at that effort despite prolonged financial hardship. Unlike many others, Sanders might also be lauded for maintaining a rather plain life and not having enriched himself in public service (especially since candidates at the other end of the financial spectrum are frequently criticized for being “out of touch with the common man”)."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5446,
+          "probs": [
+            0.2352,
+            0.5446,
+            0.1357,
+            0.0845
+          ],
+          "correct": false,
+          "evidence": "In February 2016, a meme about the lack of business acumen and experience exhibited by Vermont senator Bernie Sanders, a Democratic presidential candidate, began circulating online: The criticisms offered in meme were a mixture of true, false, irrelevant, and misleading statements. This meme’s characterization of Sanders as a “loser” on this basis evinces a rather skewed perspective, however."
+        }
+      ]
+    },
+    {
+      "idx": 968,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "Obama Administration legalized bump stocks.",
+      "explanation": "Q: Did the Obama administration legalize “bump stocks” for semiautomatic rifles?A: No federal law explicitly addresses “bump stocks.” The Bureau of Alcohol, Tobacco, Firearms and Explosives ruled 10 times between 2008 and 2017 that certain models could not be prohibited under existing gun laws.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.3969,
+          "probs": [
+            0.2118,
+            0.3969,
+            0.2095,
+            0.1817
+          ],
+          "correct": false,
+          "evidence": "Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.4635,
+          "probs": [
+            0.4635,
+            0.3798,
+            0.0766,
+            0.0802
+          ],
+          "correct": false,
+          "evidence": "Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks. Bush administration. Atf.gov. 1 Dec 2016.U.S. Congress.gov."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4281,
+          "probs": [
+            0.158,
+            0.4281,
+            0.2669,
+            0.1471
+          ],
+          "correct": false,
+          "evidence": "Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks. Bush administration. Atf.gov. 1 Dec 2016.U.S. Congress.gov."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "true",
+          "confidence": 0.6807,
+          "probs": [
+            0.6807,
+            0.2052,
+            0.047,
+            0.0671
+          ],
+          "correct": false,
+          "evidence": "Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks. Bush administration. Atf.gov. 1 Dec 2016.U.S. Congress.gov."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.3305,
+          "probs": [
+            0.0938,
+            0.3209,
+            0.3305,
+            0.2549
+          ],
+          "correct": false,
+          "evidence": "Q: Did the Obama administration legalize “bump stocks” for semiautomatic rifles? A: No federal law explicitly addresses “bump stocks.” The Bureau of Alcohol, Tobacco, Firearms and Explosives ruled 10 times between 2008 and 2017 that certain models could not be prohibited under existing gun laws.I just read on AOL that Trump announced (via tweet of course) the Obama administration legalized the sale of bump stocks. Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.3937,
+          "probs": [
+            0.3816,
+            0.3937,
+            0.1047,
+            0.1201
+          ],
+          "correct": false,
+          "evidence": "Q: Did the Obama administration legalize “bump stocks” for semiautomatic rifles? A: No federal law explicitly addresses “bump stocks.” The Bureau of Alcohol, Tobacco, Firearms and Explosives ruled 10 times between 2008 and 2017 that certain models could not be prohibited under existing gun laws.I just read on AOL that Trump announced (via tweet of course) the Obama administration legalized the sale of bump stocks. Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks. Trump (@realDonaldTrump) March 23, 2018The president’s tweet may have left some with the false impression that bump stocks had been illegal and the Obama administration made some change in the law. Bush administration."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.4153,
+          "probs": [
+            0.3902,
+            0.4153,
+            0.1105,
+            0.084
+          ],
+          "correct": false,
+          "evidence": "Since then, a number of FactCheck.org readers have emailed us, inquiring whether the gun accessories were allowed during Obama’s presidency.Obama Administration legalized bump stocks. Bush administration. Atf.gov. 1 Dec 2016.U.S. Congress.gov."
+        }
+      ]
+    },
+    {
+      "idx": 1075,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "Anticoagulants should be used to fight Covid-19.",
+      "explanation": "There is evidence supporting the use of anticoagulants in some Covid-19 patients.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.9835,
+          "probs": [
+            0.9835,
+            0.0075,
+            0.0052,
+            0.0038
+          ],
+          "correct": false,
+          "evidence": "Anticoagulants should be used to fight Covid-19."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.5884,
+          "probs": [
+            0.5884,
+            0.2571,
+            0.0974,
+            0.0571
+          ],
+          "correct": false,
+          "evidence": "Antibiotics should be used to fight Covid-19. Antibiotics are not recommended in patients with Covid-19. Covid-19 is caused by a virus and antibiotics are used to prevent or treat bacterial infections. Antivirals should be used to fight Covid-19. Anti-inflammatories should be used to fight Covid-19. Anticoagulants should be used to fight Covid-19. There is evidence supporting the use of anticoagulants in some Covid-19 patients. Claim 1 of 5"
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "true",
+          "confidence": 0.6491,
+          "probs": [
+            0.6491,
+            0.2562,
+            0.0491,
+            0.0456
+          ],
+          "correct": false,
+          "evidence": "Antibiotics should be used to fight Covid-19. Antibiotics are not recommended in patients with Covid-19. Covid-19 is caused by a virus and antibiotics are used to prevent or treat bacterial infections. Antivirals should be used to fight Covid-19. Anti-inflammatories should be used to fight Covid-19. Anticoagulants should be used to fight Covid-19. There is evidence supporting the use of anticoagulants in some Covid-19 patients. Claim 1 of 5"
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.3162,
+          "probs": [
+            0.2936,
+            0.284,
+            0.3162,
+            0.1061
+          ],
+          "correct": false,
+          "evidence": "Antibiotics should be used to fight Covid-19. Antibiotics are not recommended in patients with Covid-19. Covid-19 is caused by a virus and antibiotics are used to prevent or treat bacterial infections. Antivirals should be used to fight Covid-19. Anti-inflammatories should be used to fight Covid-19. Anticoagulants should be used to fight Covid-19. There is evidence supporting the use of anticoagulants in some Covid-19 patients. Claim 1 of 5"
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4737,
+          "probs": [
+            0.2424,
+            0.4737,
+            0.1016,
+            0.1823
+          ],
+          "correct": false,
+          "evidence": "Antibiotics should be used to fight Covid-19. Antivirals should be used to fight Covid-19. Anticoagulants should be used to fight Covid-19."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.9585,
+          "probs": [
+            0.9585,
+            0.0166,
+            0.0145,
+            0.0105
+          ],
+          "correct": false,
+          "evidence": "Antibiotics should be used to fight Covid-19. Antivirals should be used to fight Covid-19. Anti-inflammatories should be used to fight Covid-19. Anticoagulants should be used to fight Covid-19. There is evidence supporting the use of anticoagulants in some Covid-19 patients."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.9743,
+          "probs": [
+            0.9743,
+            0.0162,
+            0.006,
+            0.0035
+          ],
+          "correct": false,
+          "evidence": "Antibiotics should be used to fight Covid-19. Antibiotics are not recommended in patients with Covid-19. Covid-19 is caused by a virus and antibiotics are used to prevent or treat bacterial infections. Antivirals should be used to fight Covid-19. Anti-inflammatories should be used to fight Covid-19. Anticoagulants should be used to fight Covid-19. There is evidence supporting the use of anticoagulants in some Covid-19 patients. Claim 1 of 5"
+        }
+      ]
+    },
+    {
+      "idx": 1180,
+      "category": "divergent",
+      "true_label": "mixture",
+      "claim": "ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation.",
+      "explanation": "This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation. This strain was not patented.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.4194,
+          "probs": [
+            0.4194,
+            0.3123,
+            0.1441,
+            0.1242
+          ],
+          "correct": false,
+          "evidence": "ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4248,
+          "probs": [
+            0.2296,
+            0.4248,
+            0.1488,
+            0.1968
+          ],
+          "correct": false,
+          "evidence": "US-Patent 8835624 is for the H1N1 virus. The patent with this number was for a strand of DNA that binds to the H1N1 virus, not the virus itself. ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation. This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4134,
+          "probs": [
+            0.1768,
+            0.4134,
+            0.0421,
+            0.3677
+          ],
+          "correct": false,
+          "evidence": "US-Patent 8835624 is for the H1N1 virus. The patent with this number was for a strand of DNA that binds to the H1N1 virus, not the virus itself. ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation. This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.3406,
+          "probs": [
+            0.2413,
+            0.2885,
+            0.3406,
+            0.1295
+          ],
+          "correct": false,
+          "evidence": "US-Patent 8835624 is for the H1N1 virus. The patent with this number was for a strand of DNA that binds to the H1N1 virus, not the virus itself. ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation. This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4416,
+          "probs": [
+            0.1847,
+            0.4416,
+            0.2213,
+            0.1523
+          ],
+          "correct": false,
+          "evidence": "The patent with this number was for a strand of DNA that binds to the H1N1 virus, not the virus itself. ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation. This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.3948,
+          "probs": [
+            0.3948,
+            0.326,
+            0.1255,
+            0.1537
+          ],
+          "correct": false,
+          "evidence": "The patent with this number was for a strand of DNA that binds to the H1N1 virus, not the virus itself. The virus was not created by those who filed the patent. ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation. This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation. The first number is the US patent number for the SARS virus."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.4872,
+          "probs": [
+            0.2825,
+            0.4872,
+            0.1246,
+            0.1056
+          ],
+          "correct": false,
+          "evidence": "US-Patent 8835624 is for the H1N1 virus. The patent with this number was for a strand of DNA that binds to the H1N1 virus, not the virus itself. ATTC VR-84 is a patent for Zika virus that comes from the Rockefeller Foundation. This is the name of a certain strain of Zika virus, which was first isolated in the 1940s in a lab funded by the Rockefeller Foundation."
+        }
+      ]
+    },
+    {
+      "idx": 656,
+      "category": "divergent",
+      "true_label": "false",
+      "claim": "“Smoking in cars with children is illegal starting January 30, 2018.”",
+      "explanation": "Q: Did a law go into effect Jan. 30 banning “anyone” from smoking in a car “as long as there are children in the vehicle”?A: No. There is no federal prohibition, although several state and local governments previously had enacted such bans.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.4562,
+          "probs": [
+            0.0662,
+            0.3136,
+            0.4562,
+            0.164
+          ],
+          "correct": false,
+          "evidence": "There is no law or proposed legislation at the federal level that bans smoking in cars with children present.Facebook users recently flagged a story as potentially false that was published in February on amomama.com under the headline: “Smoking in cars with children is illegal starting January 30, 2018.” They were right to be suspicious of the story.The article claims that, since the end of January, smoking in “any private vehicle” with minors present has been punishable by a $100 fine."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.5668,
+          "probs": [
+            0.5668,
+            0.3358,
+            0.0199,
+            0.0775
+          ],
+          "correct": false,
+          "evidence": "Q: Did a law go into effect Jan. 30 banning “anyone” from smoking in a car “as long as there are children in the vehicle”? The legislation still must be approved by the state Senate, and Republican Gov. Kay Ivey would have to sign it. Accessed 20 Feb 2018.U.S. Filed 7 Nov 2017.Public Health Law Center. “U.S."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.3721,
+          "probs": [
+            0.1005,
+            0.3721,
+            0.362,
+            0.1653
+          ],
+          "correct": true,
+          "evidence": "Q: Did a law go into effect Jan. 30 banning “anyone” from smoking in a car “as long as there are children in the vehicle”? The legislation still must be approved by the state Senate, and Republican Gov. Kay Ivey would have to sign it. Accessed 20 Feb 2018.U.S. Filed 7 Nov 2017.Public Health Law Center. “U.S."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.2751,
+          "probs": [
+            0.205,
+            0.2751,
+            0.2733,
+            0.2466
+          ],
+          "correct": true,
+          "evidence": "Q: Did a law go into effect Jan. 30 banning “anyone” from smoking in a car “as long as there are children in the vehicle”? The legislation still must be approved by the state Senate, and Republican Gov. Kay Ivey would have to sign it. Accessed 20 Feb 2018.U.S. Filed 7 Nov 2017.Public Health Law Center. “U.S."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "mixture",
+          "confidence": 0.4736,
+          "probs": [
+            0.0395,
+            0.2368,
+            0.2501,
+            0.4736
+          ],
+          "correct": false,
+          "evidence": "There is no law or proposed legislation at the federal level that bans smoking in cars with children present.Facebook users recently flagged a story as potentially false that was published in February on amomama.com under the headline: “Smoking in cars with children is illegal starting January 30, 2018.” They were right to be suspicious of the story.The article claims that, since the end of January, smoking in “any private vehicle” with minors present has been punishable by a $100 fine. The fine in the U.K. is £50, or currently about $70.Editor’s note: FactCheck.org is one of several organizations working with Facebook to help identify and label false stories flagged by readers on the social media network.Sihlangu, Junie. “Smoking in cars with children is illegal starting January 30, 2018.” Amomama.com. Prohibitions on Smoking in Cars with Children.” Oct 2017.“Another US City Makes It Illegal To Smoke In Cars With Kids.” WBZ CBS Boston. 19 Oct 2017.Bowdan, Ann. “Ban prevents smoking in car while driving with children.” WLKY News. 12 May 2016.Sarkar, Monica. “No smoking if the kids are in the car, says England.” CNN. 12 Feb 2015.Holyoke, Cody. “Law forbidding smoking in cars with ch [...]"
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.7155,
+          "probs": [
+            0.7155,
+            0.182,
+            0.0454,
+            0.0571
+          ],
+          "correct": false,
+          "evidence": "Q: Did a law go into effect Jan. 30 banning “anyone” from smoking in a car “as long as there are children in the vehicle”? There is no law or proposed legislation at the federal level that bans smoking in cars with children present.Facebook users recently flagged a story as potentially false that was published in February on amomama.com under the headline: “Smoking in cars with children is illegal starting January 30, 2018.” They were right to be suspicious of the story.The article claims that, since the end of January, smoking in “any private vehicle” with minors present has been punishable by a $100 fine. The fine in the U.K. is £50, or currently about $70.Editor’s note: FactCheck.org is one of several organizations working with Facebook to help identify and label false stories flagged by readers on the social media network.Sihlangu, Junie. “Smoking in cars with children is illegal starting January 30, 2018.” Amomama.com. Centers for Disease Control and Prevention. “Secondhand Smoke.” Cdc.gov. 30 June 2017, accessed 20 Feb 2018.Cason, Mike. “House passes bill to ban smoking in cars with minors.” AL.com. 30 Jan 2018.“HB 26.” Alabama House of Representatives. Prohibitions on Smokin [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.8876,
+          "probs": [
+            0.8876,
+            0.0711,
+            0.0275,
+            0.0138
+          ],
+          "correct": false,
+          "evidence": "Q: Did a law go into effect Jan. 30 banning “anyone” from smoking in a car “as long as there are children in the vehicle”? The legislation still must be approved by the state Senate, and Republican Gov. Kay Ivey would have to sign it. Accessed 20 Feb 2018.U.S. Filed 7 Nov 2017.Public Health Law Center. “U.S."
+        }
+      ]
+    },
+    {
+      "idx": 647,
+      "category": "divergent",
+      "true_label": "false",
+      "claim": "Chris Sununu Says drug dealers have \"overdosed on purpose\" to avoid prosecution.",
+      "explanation": "How did a piece of piping installed when Richard Nixon was U.S. president go without once being checked before leading to a fire that devastated the East Coast’s largest and oldest oil refinery?",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.4763,
+          "probs": [
+            0.0818,
+            0.1875,
+            0.4763,
+            0.2544
+          ],
+          "correct": false,
+          "evidence": "In the aftermath of the Washington explosion, a judge dismissed $2.4 million in fines against Tesoro because the state could not prove the refinery failed to comply with enforceable rules for inspection and maintenance of equipment. “In terms of, are we making sure in some sort of holistic way that these refineries are safe, there’s nothing there,” said Ruch. “There’s sort of a vacuum.”"
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.654,
+          "probs": [
+            0.654,
+            0.1905,
+            0.07,
+            0.0855
+          ],
+          "correct": false,
+          "evidence": "Those details are filled in by industry standards that may not have the enforcement of law. That regulatory approach makes rules difficult to enforce and allows problems at refineries to go undiscovered, said Jeff Ruch of environmental advocacy group Public Employees for Environmental Responsibility."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.6389,
+          "probs": [
+            0.0819,
+            0.1363,
+            0.6389,
+            0.143
+          ],
+          "correct": false,
+          "evidence": "Those details are filled in by industry standards that may not have the enforcement of law. That regulatory approach makes rules difficult to enforce and allows problems at refineries to go undiscovered, said Jeff Ruch of environmental advocacy group Public Employees for Environmental Responsibility."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "mixture",
+          "confidence": 0.3159,
+          "probs": [
+            0.2832,
+            0.2594,
+            0.1416,
+            0.3159
+          ],
+          "correct": false,
+          "evidence": "Those details are filled in by industry standards that may not have the enforcement of law. That regulatory approach makes rules difficult to enforce and allows problems at refineries to go undiscovered, said Jeff Ruch of environmental advocacy group Public Employees for Environmental Responsibility."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "true",
+          "confidence": 0.809,
+          "probs": [
+            0.809,
+            0.1052,
+            0.0244,
+            0.0614
+          ],
+          "correct": false,
+          "evidence": "The CSB found that prior to the California and Washington fires, as well as the BP Texas City blast in 2005 that killed 15, internal and external instructions for keeping plants operating safely were either ignored or not followed correctly. That regulatory approach makes rules difficult to enforce and allows problems at refineries to go undiscovered, said Jeff Ruch of environmental advocacy group Public Employees for Environmental Responsibility. In the aftermath of the Washington explosion, a judge dismissed $2.4 million in fines against Tesoro because the state could not prove the refinery failed to comply with enforceable rules for inspection and maintenance of equipment. “In terms of, are we making sure in some sort of holistic way that these refineries are safe, there’s nothing there,” said Ruch. “There’s sort of a vacuum.”"
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.3948,
+          "probs": [
+            0.3948,
+            0.3416,
+            0.0994,
+            0.1642
+          ],
+          "correct": false,
+          "evidence": "Maintaining and inspecting equipment at refineries is required by the OSHA and EPA, but those agencies don’t tell refineries how or when to inspect. Those details are filled in by industry standards that may not have the enforcement of law. The CSB found that prior to the California and Washington fires, as well as the BP Texas City blast in 2005 that killed 15, internal and external instructions for keeping plants operating safely were either ignored or not followed correctly. That regulatory approach makes rules difficult to enforce and allows problems at refineries to go undiscovered, said Jeff Ruch of environmental advocacy group Public Employees for Environmental Responsibility. In the aftermath of the Washington explosion, a judge dismissed $2.4 million in fines against Tesoro because the state could not prove the refinery failed to comply with enforceable rules for inspection and maintenance of equipment. “In terms of, are we making sure in some sort of holistic way that these refineries are safe, there’s nothing there,” said Ruch. “There’s sort of a vacuum.”"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.9017,
+          "probs": [
+            0.9017,
+            0.0702,
+            0.0177,
+            0.0103
+          ],
+          "correct": false,
+          "evidence": "Those details are filled in by industry standards that may not have the enforcement of law. That regulatory approach makes rules difficult to enforce and allows problems at refineries to go undiscovered, said Jeff Ruch of environmental advocacy group Public Employees for Environmental Responsibility."
+        }
+      ]
+    },
+    {
+      "idx": 73,
+      "category": "divergent",
+      "true_label": "false",
+      "claim": "A teenage schoolgirl in Texas became pregnant through a flu vaccination.",
+      "explanation": "WNDR assumes however all responsibility for the satirical nature of its articles and for the fictional nature of their content. All characters appearing in the articles in this website — even those based on real people — are entirely fictional and any resemblance between them and any persons, living, dead, or undead is purely a miracle.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.8627,
+          "probs": [
+            0.0208,
+            0.0805,
+            0.8627,
+            0.036
+          ],
+          "correct": false,
+          "evidence": "A 14-year old schoolgirl has suffered serious complications after a flu shot allegedly left the young girl terribly ill and with severe cramps, until the family doctor finally realized weeks later she had been impregnated by the vaccine, reports the Forth Worth Telegram this week. “She had all the typical symptoms of a pregnant woman."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.48,
+          "probs": [
+            0.0953,
+            0.3261,
+            0.48,
+            0.0987
+          ],
+          "correct": false,
+          "evidence": "Due to that sleight of hand, readers surmised the girl had lied about her sexual experience and had blamed the flu vaccine to deflect suspicion about the true nature of her pregnancy."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.7135,
+          "probs": [
+            0.0401,
+            0.2117,
+            0.7135,
+            0.0347
+          ],
+          "correct": false,
+          "evidence": "Due to that sleight of hand, readers surmised the girl had lied about her sexual experience and had blamed the flu vaccine to deflect suspicion about the true nature of her pregnancy."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "true",
+          "confidence": 0.4374,
+          "probs": [
+            0.4374,
+            0.3542,
+            0.1532,
+            0.0552
+          ],
+          "correct": false,
+          "evidence": "Due to that sleight of hand, readers surmised the girl had lied about her sexual experience and had blamed the flu vaccine to deflect suspicion about the true nature of her pregnancy."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.4844,
+          "probs": [
+            0.0728,
+            0.3368,
+            0.4844,
+            0.106
+          ],
+          "correct": false,
+          "evidence": "A 14-year old schoolgirl has suffered serious complications after a flu shot allegedly left the young girl terribly ill and with severe cramps, until the family doctor finally realized weeks later she had been impregnated by the vaccine, reports the Forth Worth Telegram this week. “She had all the typical symptoms of a pregnant woman. It’s not the first time a young woman falls pregnant without the consent of her parents, but the girl seemed sincere when she said she had never had sexual relations with a boy, and she urged me to check her hymen, which I eventually did, and to my utter surprise, the hymen was fully intact. Due to that sleight of hand, readers surmised the girl had lied about her sexual experience and had blamed the flu vaccine to deflect suspicion about the true nature of her pregnancy."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.3852,
+          "probs": [
+            0.3852,
+            0.3632,
+            0.0804,
+            0.1712
+          ],
+          "correct": false,
+          "evidence": "A 14-year old schoolgirl has suffered serious complications after a flu shot allegedly left the young girl terribly ill and with severe cramps, until the family doctor finally realized weeks later she had been impregnated by the vaccine, reports the Forth Worth Telegram this week. “She had all the typical symptoms of a pregnant woman. It’s not the first time a young woman falls pregnant without the consent of her parents, but the girl seemed sincere when she said she had never had sexual relations with a boy, and she urged me to check her hymen, which I eventually did, and to my utter surprise, the hymen was fully intact. Due to that sleight of hand, readers surmised the girl had lied about her sexual experience and had blamed the flu vaccine to deflect suspicion about the true nature of her pregnancy. None of this (neither the girl’s claims nor the article reporting them) was true, however. World News Daily Report is just one of many fake news sites that print fictitious articles, as noted in their disclaimer:"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5885,
+          "probs": [
+            0.18,
+            0.5885,
+            0.1614,
+            0.07
+          ],
+          "correct": true,
+          "evidence": "Due to that sleight of hand, readers surmised the girl had lied about her sexual experience and had blamed the flu vaccine to deflect suspicion about the true nature of her pregnancy."
+        }
+      ]
+    },
+    {
+      "idx": 244,
+      "category": "divergent",
+      "true_label": "false",
+      "claim": "Pro-life activists say Girl Scout cookie sales benefit Planned Parenthood and have called for a boycott.",
+      "explanation": "Girl Scout Cookies Fund Planned Parenthood",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.8553,
+          "probs": [
+            0.0172,
+            0.0639,
+            0.8553,
+            0.0637
+          ],
+          "correct": false,
+          "evidence": "The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.4695,
+          "probs": [
+            0.0907,
+            0.3115,
+            0.4695,
+            0.1283
+          ],
+          "correct": false,
+          "evidence": "Girl Scout cookies don’t fund Planned Parenthood. The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization. There’s also been some confusion about where money from Girl Scout cookie sales go. All troop proceeds and other rewards earned through participation in the Girl Scout Cookie Program must be used to enhance each girl’s Girl Scout experience. Comments"
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.4526,
+          "probs": [
+            0.0668,
+            0.2968,
+            0.4526,
+            0.1838
+          ],
+          "correct": false,
+          "evidence": "Girl Scout cookies don’t fund Planned Parenthood. The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization. There’s also been some confusion about where money from Girl Scout cookie sales go. All troop proceeds and other rewards earned through participation in the Girl Scout Cookie Program must be used to enhance each girl’s Girl Scout experience. Comments"
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "mixture",
+          "confidence": 0.4165,
+          "probs": [
+            0.1207,
+            0.3719,
+            0.0908,
+            0.4165
+          ],
+          "correct": false,
+          "evidence": "Girl Scout cookies don’t fund Planned Parenthood. The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization. There’s also been some confusion about where money from Girl Scout cookie sales go. All troop proceeds and other rewards earned through participation in the Girl Scout Cookie Program must be used to enhance each girl’s Girl Scout experience. Comments"
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.7621,
+          "probs": [
+            0.0348,
+            0.1504,
+            0.7621,
+            0.0527
+          ],
+          "correct": false,
+          "evidence": "Girl Scout cookies don’t fund Planned Parenthood. The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization. There’s also been some confusion about where money from Girl Scout cookie sales go."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.5315,
+          "probs": [
+            0.076,
+            0.2477,
+            0.5315,
+            0.1448
+          ],
+          "correct": false,
+          "evidence": "Girl Scout cookies don’t fund Planned Parenthood. The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization. The confrontation led to a showdown between leaders of Pro-Life Waco and then-Girl Scouts of the USA CEO Kathy Clonginger on the “Today” show in March 2004. There’s also been some confusion about where money from Girl Scout cookie sales go. All troop proceeds and other rewards earned through participation in the Girl Scout Cookie Program must be used to enhance each girl’s Girl Scout experience."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5061,
+          "probs": [
+            0.229,
+            0.5061,
+            0.1354,
+            0.1295
+          ],
+          "correct": true,
+          "evidence": "Girl Scout cookies don’t fund Planned Parenthood. The first call for a Girl Scout cookie boycott came in 2004 from Pro-Life Waco, a Texas-based pro-life organization. There’s also been some confusion about where money from Girl Scout cookie sales go. All troop proceeds and other rewards earned through participation in the Girl Scout Cookie Program must be used to enhance each girl’s Girl Scout experience. Comments"
+        }
+      ]
+    },
+    {
+      "idx": 91,
+      "category": "divergent",
+      "true_label": "true",
+      "claim": "Some grocery store receipts contain chemicals linked to infertility and hormone-related cancers.",
+      "explanation": "To determine the extent of BPA and its chemical cousin, bisphenol S (BPS), in thermal paper, a team of researchers from the University of Granada (UGR) analyzed more than 100 receipts and tickets collected from Brazil, Spain, and France — an admittedly small sample size. More than 90% of the receipts collected in the former two countries were shown to contain BPA, compared with about half of those obtained in France. However, many receipts in France contained higher concentrations of BPS, which may also impact the endocrine system.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "unproven",
+          "confidence": 0.5927,
+          "probs": [
+            0.0606,
+            0.26,
+            0.5927,
+            0.0867
+          ],
+          "correct": false,
+          "evidence": "Grocery store receipts are rumored to contain chemicals that may disrupt the endocrine system and have been linked in scientific studies to hormone-related cancers and other health concerns."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.3985,
+          "probs": [
+            0.1393,
+            0.3985,
+            0.2956,
+            0.1666
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.4547,
+          "probs": [
+            0.1866,
+            0.3487,
+            0.01,
+            0.4547
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.4523,
+          "probs": [
+            0.093,
+            0.2966,
+            0.4523,
+            0.1581
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.5545,
+          "probs": [
+            0.0549,
+            0.2991,
+            0.5545,
+            0.0914
+          ],
+          "correct": false,
+          "evidence": "Grocery store receipts are rumored to contain chemicals that may disrupt the endocrine system and have been linked in scientific studies to hormone-related cancers and other health concerns. This claim is true. Three-quarters of receipts made from thermal paper are thought to contain bisphenol A (BPA), a known endocrine disrupter that has been linked to infertility and hormone-related cancers, according to a 2019 study published in the journal Environmental Research."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.6226,
+          "probs": [
+            0.0602,
+            0.1967,
+            0.6226,
+            0.1205
+          ],
+          "correct": false,
+          "evidence": "Grocery store receipts are rumored to contain chemicals that may disrupt the endocrine system and have been linked in scientific studies to hormone-related cancers and other health concerns. This claim is true. Three-quarters of receipts made from thermal paper are thought to contain bisphenol A (BPA), a known endocrine disrupter that has been linked to infertility and hormone-related cancers, according to a 2019 study published in the journal Environmental Research."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5061,
+          "probs": [
+            0.2409,
+            0.5061,
+            0.1252,
+            0.1277
+          ],
+          "correct": false,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "idx": 108,
+      "category": "divergent",
+      "true_label": "true",
+      "claim": "On September 18 2020, Twitter user @JohnCammo tweeted that President Trump's \"October Surprise\" would involve a positive test result.",
+      "explanation": "Twitter account @JohnCammo’s “October surprise” tweet about Donald Trump’s COVID-19 infection was real, and was indeed shared on September 18 2020. The tweet appeared two weeks before news of Trump’s positive test result broke late on the evening of October 1 2020, or early in the morning on October 2 2020 on the East Coast.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.6821,
+          "probs": [
+            0.1184,
+            0.6821,
+            0.0137,
+            0.1858
+          ],
+          "correct": false,
+          "evidence": "Just after midnight Eastern time on October 2 2020, news broke that United States President Donald Trump and First Lady Melania Trump tested positive for novel coronavirus; a screenshot of a September 18 2020 tweet began circulating shortly thereafter:Attributed to user @JohnCammo, it read:Trump’s October surprise will be the announcement of “his infection.” Fake, but quite dramatic."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4395,
+          "probs": [
+            0.2067,
+            0.4395,
+            0.1036,
+            0.2502
+          ],
+          "correct": false,
+          "evidence": "This twist will blow Biden off the screens, the “Trump COVID watch” dominating every minute of every day."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.3918,
+          "probs": [
+            0.153,
+            0.3211,
+            0.1341,
+            0.3918
+          ],
+          "correct": false,
+          "evidence": "This twist will blow Biden off the screens, the “Trump COVID watch” dominating every minute of every day."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4178,
+          "probs": [
+            0.1877,
+            0.4178,
+            0.074,
+            0.3204
+          ],
+          "correct": false,
+          "evidence": "This twist will blow Biden off the screens, the “Trump COVID watch” dominating every minute of every day."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.4002,
+          "probs": [
+            0.0876,
+            0.3789,
+            0.4002,
+            0.1334
+          ],
+          "correct": false,
+          "evidence": "Just after midnight Eastern time on October 2 2020, news broke that United States President Donald Trump and First Lady Melania Trump tested positive for novel coronavirus; a screenshot of a September 18 2020 tweet began circulating shortly thereafter:Attributed to user @JohnCammo, it read:Trump’s October surprise will be the announcement of “his infection.” Fake, but quite dramatic. Awesome.— Josh Marshall (@joshtpm) September 18, 2020Of note is that @JohnCammo did not just predict Trump’s infection, but ensuing events that have yet to take place as of October 2 2020, and which remain to be seen.TL;DRTwitter account @JohnCammo’s “October surprise” tweet about Donald Trump’s COVID-19 infection was real, and was indeed shared on September 18 2020. The tweet appeared two weeks before news of Trump’s positive test result broke late on the evening of October 1 2020, or early in the morning on October 2 2020 on the East Coast.Comments"
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.4513,
+          "probs": [
+            0.0928,
+            0.4513,
+            0.1922,
+            0.2637
+          ],
+          "correct": false,
+          "evidence": "Just after midnight Eastern time on October 2 2020, news broke that United States President Donald Trump and First Lady Melania Trump tested positive for novel coronavirus; a screenshot of a September 18 2020 tweet began circulating shortly thereafter:Attributed to user @JohnCammo, it read:Trump’s October surprise will be the announcement of “his infection.” Fake, but quite dramatic. But one user helpfully retweeted it:Here’s @JohnCammo’s original October surprise prediction from 9/18 for those who want to see the original and don’t have time to scroll through his millions of replies to find it. https://t.co/Z9XtLoQwYC— ParmesanPopcorn (@ParmesanPopcorn) October 2, 2020The tweet was real, and it was accurately described:Trump’s October surprise will be the announcement of “his infection.” Fake, but quite dramatic. Then, 14 days later, Trump will emerge, 100% cured by hydroxychloroquine.— JohnCammo (@JohnCammo) September 18, 2020It was difficult to find in part because it was not a standalone tweet, but a reply to the following tweet:Can't see everyone, obviously. Awesome.— Josh Marshall (@joshtpm) September 18, 2020Of note is that @JohnCammo did not just predict Trump’s infection, [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5696,
+          "probs": [
+            0.2162,
+            0.5696,
+            0.0937,
+            0.1206
+          ],
+          "correct": false,
+          "evidence": "This twist will blow Biden off the screens, the “Trump COVID watch” dominating every minute of every day."
+        }
+      ]
+    },
+    {
+      "idx": 125,
+      "category": "divergent",
+      "true_label": "true",
+      "claim": "Dr. Deborah Birx said at a press conference concerning testing for COVID-19 that \"At $50 a test, it wasn’t enough to hire another technician to run the machine full-time. So at $100 a test, it is.",
+      "explanation": "‘At $50 a Test It Wasn’t Enough … at $100 It Is’",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "mixture",
+          "confidence": 0.426,
+          "probs": [
+            0.15,
+            0.3789,
+            0.0451,
+            0.426
+          ],
+          "correct": false,
+          "evidence": "At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4855,
+          "probs": [
+            0.2137,
+            0.4855,
+            0.0075,
+            0.2933
+          ],
+          "correct": false,
+          "evidence": "Deborah Birx alongside United States President Donald Trump, with the caption stating:During a COVID-19 press conference, Dr. At $50 a test, it wasn’t enough to hire another tech to run the machine full-time. Any number out there? It takes a tech full-time. At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.474,
+          "probs": [
+            0.1446,
+            0.474,
+            0.0036,
+            0.3779
+          ],
+          "correct": false,
+          "evidence": "Deborah Birx alongside United States President Donald Trump, with the caption stating:During a COVID-19 press conference, Dr. At $50 a test, it wasn’t enough to hire another tech to run the machine full-time. Any number out there? It takes a tech full-time. At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4168,
+          "probs": [
+            0.1842,
+            0.4168,
+            0.0073,
+            0.3916
+          ],
+          "correct": false,
+          "evidence": "Deborah Birx alongside United States President Donald Trump, with the caption stating:During a COVID-19 press conference, Dr. At $50 a test, it wasn’t enough to hire another tech to run the machine full-time. Any number out there? It takes a tech full-time. At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.5393,
+          "probs": [
+            0.1293,
+            0.5393,
+            0.0168,
+            0.3146
+          ],
+          "correct": false,
+          "evidence": "Deborah Birx alongside United States President Donald Trump, with the caption stating:During a COVID-19 press conference, Dr. At $50 a test, it wasn’t enough to hire another tech to run the machine full-time. At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.3528,
+          "probs": [
+            0.0739,
+            0.3446,
+            0.3528,
+            0.2287
+          ],
+          "correct": false,
+          "evidence": "Deborah Birx alongside United States President Donald Trump, with the caption stating:During a COVID-19 press conference, Dr. Birx let it slip that the lack of testing is because it wasn’t profitable enough for private labs:“It takes a tech full-time. At $50 a test, it wasn’t enough to hire another tech to run the machine full-time. At $100 a test it is.”Birx’s remarks were taken from an April 16 2020 press conference she gave alongside Trump. At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5163,
+          "probs": [
+            0.2173,
+            0.5163,
+            0.1248,
+            0.1416
+          ],
+          "correct": false,
+          "evidence": "Deborah Birx alongside United States President Donald Trump, with the caption stating:During a COVID-19 press conference, Dr. At $50 a test, it wasn’t enough to hire another tech to run the machine full-time. Any number out there? It takes a tech full-time. At $50 a test, it wasn’t enough to hire another technician to run the machine full-time."
+        }
+      ]
+    },
+    {
+      "idx": 205,
+      "category": "divergent",
+      "true_label": "true",
+      "claim": "A photograph shows the Arch of Baal erected on the National Mall in Washington, D.C.",
+      "explanation": "This isn’t the first time that the EndOfTheAmericanDream.com has fretted over this replica. In 2016, when the arch was momentarily displayed in New York City, the apocalyptic web site reported that the “Temple of Baal (would) be erected in Times Square in New York City” and asserted that “a lot of people are quite disturbed by this.”",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.3952,
+          "probs": [
+            0.1567,
+            0.3952,
+            0.3007,
+            0.1474
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "unproven",
+          "confidence": 0.3191,
+          "probs": [
+            0.1315,
+            0.2968,
+            0.3191,
+            0.2527
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C. Is this just a coincidence?"
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.398,
+          "probs": [
+            0.1761,
+            0.3934,
+            0.0325,
+            0.398
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C. Is this just a coincidence?"
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "unproven",
+          "confidence": 0.5,
+          "probs": [
+            0.0928,
+            0.2336,
+            0.5,
+            0.1735
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C. Is this just a coincidence?"
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "unproven",
+          "confidence": 0.8169,
+          "probs": [
+            0.0265,
+            0.1245,
+            0.8169,
+            0.032
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C. Although these two events had little connection to one another (other than taking place in the same city), web sites such as EndOfTheAmericanDream.com published articles which questioned the coincidental timing of the arch’s appearance in Washington: Is it just a coincidence that the “Arch of Baal” has been erected in Washington D.C. on the exact same week that Brett Kavanaugh and Christine Blasey Ford are testifying before Congress? You can view a photograph of the arch standing directly in front of the U.S."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "unproven",
+          "confidence": 0.3896,
+          "probs": [
+            0.1095,
+            0.3425,
+            0.3896,
+            0.1584
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C. Although these two events had little connection to one another (other than taking place in the same city), web sites such as EndOfTheAmericanDream.com published articles which questioned the coincidental timing of the arch’s appearance in Washington: Is it just a coincidence that the “Arch of Baal” has been erected in Washington D.C. on the exact same week that Brett Kavanaugh and Christine Blasey Ford are testifying before Congress? According to the official website of the Institute for Digital Archaeology, the Arch of Palmyra was unveiled on the National Mall on September 26th, and it will remain there until September 29th. You can view a photograph of the arch standing directly in front of the U.S. Projects like this recreation of the Arch of Palmyra are a critical way to celebrate these iconic pieces and keep them very much alive and present in our collective consciousness.” The arch will remain on the Mall at 6th St (opposite the National Gallery of Art) through September 29th."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.4789,
+          "probs": [
+            0.2332,
+            0.4789,
+            0.1575,
+            0.1304
+          ],
+          "correct": false,
+          "evidence": "On 26 September 2018, the Institute for Digital Archaeology unveiled a replica of Palmyra, Syria’s iconic Triumphal Arch on the National Mall in Washington, D.C. Is this just a coincidence?"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "category": "consensus_failure",
+      "true_label": "unproven",
+      "claim": "FBI agent Peter Strzok II grew up in Iran; had a father who engaged in clandestine activities overseas under the guise of doing charitable work; served as a \"Middle East intel operative\" in the Obama administration; and was a CIA agent \"placed\" in the FBI to help Hillary Clinton win the presidency.",
+      "explanation": "Peter Strzok spent several years of his childhood in Iran, but he did not “grow up” there. There is no evidence nor any good reason to suppose that he acted as an “envoy” or “intel operative” in U.S. dealings with Iran at any time during the Obama administration. And the claim that Strzok is or was a covert CIA operative “placed” in the FBI to help Hillary Clinton win the presidency and subvert the Trump administration is a flight of fancy divorced from all evidence and logic.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.6912,
+          "probs": [
+            0.1115,
+            0.6912,
+            0.0046,
+            0.1927
+          ],
+          "correct": false,
+          "evidence": "Once again, we have searched for any scrap of documentation that might prove that Peter Strzok II (the FBI agent) served as “the key Middle Eastern intel operative” in negotiations between the U.S. and Iran during the Obama administration, and we found none."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4596,
+          "probs": [
+            0.2205,
+            0.4596,
+            0.004,
+            0.3159
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4831,
+          "probs": [
+            0.1159,
+            0.4831,
+            0.0068,
+            0.3943
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4701,
+          "probs": [
+            0.1907,
+            0.4701,
+            0.0033,
+            0.3359
+          ],
+          "correct": false,
+          "evidence": ""
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.6026,
+          "probs": [
+            0.1326,
+            0.6026,
+            0.0076,
+            0.2571
+          ],
+          "correct": false,
+          "evidence": "A July 2018 salvo from the far-right blog Big League Politics attempted to make the case that Strzok, who spent part of his childhood in Iran, is a covert CIA operative who served the Iranian regime’s interests while allegedly acting as a “key Middle Eastern Intel operative” for President Obama, then was “placed in the FBI to ensure a win for Hillary Clinton” in the 2016 presidential election. Peter Strzok II is FBI agent Peter Strzok. Once again, we have searched for any scrap of documentation that might prove that Peter Strzok II (the FBI agent) served as “the key Middle Eastern intel operative” in negotiations between the U.S. and Iran during the Obama administration, and we found none."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.4504,
+          "probs": [
+            0.1227,
+            0.4504,
+            0.0446,
+            0.3823
+          ],
+          "correct": false,
+          "evidence": "A July 2018 salvo from the far-right blog Big League Politics attempted to make the case that Strzok, who spent part of his childhood in Iran, is a covert CIA operative who served the Iranian regime’s interests while allegedly acting as a “key Middle Eastern Intel operative” for President Obama, then was “placed in the FBI to ensure a win for Hillary Clinton” in the 2016 presidential election. Did you know that Peter Strzok II (Strzok’s father) and Hillary Clinton have a lot in common? Peter Strzok II is FBI agent Peter Strzok. Once again, we have searched for any scrap of documentation that might prove that Peter Strzok II (the FBI agent) served as “the key Middle Eastern intel operative” in negotiations between the U.S. and Iran during the Obama administration, and we found none. The claim that Strzok was “placed in the FBI to ensure a win for Hillary Clinton” is flatly absurd."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5379,
+          "probs": [
+            0.2018,
+            0.5379,
+            0.0122,
+            0.2482
+          ],
+          "correct": false,
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "category": "consensus_failure",
+      "true_label": "unproven",
+      "claim": "The new supplement InteliGEN can boost brain function.",
+      "explanation": "Tens of thousands of holiday makers fled seaside towns on Australia’s east coast on Thursday as bushfires approached, and military ships and helicopters began rescuing thousands more trapped by the blazes.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "true",
+          "confidence": 0.9917,
+          "probs": [
+            0.9917,
+            0.0033,
+            0.003,
+            0.002
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "true",
+          "confidence": 0.942,
+          "probs": [
+            0.942,
+            0.0357,
+            0.0131,
+            0.0092
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns. It’s going to be a very difficult day,” NSW Rural Fire Service (RFS) Commissioner Shane Fitzsimmons said."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "true",
+          "confidence": 0.9898,
+          "probs": [
+            0.9898,
+            0.0061,
+            0.0022,
+            0.002
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns. It’s going to be a very difficult day,” NSW Rural Fire Service (RFS) Commissioner Shane Fitzsimmons said."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "true",
+          "confidence": 0.8914,
+          "probs": [
+            0.8914,
+            0.075,
+            0.0218,
+            0.0119
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns. It’s going to be a very difficult day,” NSW Rural Fire Service (RFS) Commissioner Shane Fitzsimmons said."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "true",
+          "confidence": 0.9924,
+          "probs": [
+            0.9924,
+            0.0039,
+            0.0016,
+            0.0022
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns. Authorities urged a mass exodus from several towns on the southeast coast, an area popular with tourists during the summer holiday season, warning that extreme heat forecast for the weekend will further stoke the fires. “The priority today is fighting fires and evacuating, getting people to safety,” Prime Minister Scott Morrison told reporters in Sydney. “There are parts of both Victoria and New South Wales which have been completely devastated, with a loss of power and communications.” Eight people have been killed by wildfires in NSW and Victoria since Monday and 18 are missing, officials said on Thursday. He said that leaving by boat was the only way out of the town. *Thousands of people had already been evacuated from the adjoining region of East Gippsland in Victoria, one of the largest such operations in the country since the northern city of Darwin evacuated over 35,000 people in the aftermath of cyclone Tracy in 1974. *Five military helicopters were en route to the south coast to back up firefighters [...]"
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "true",
+          "confidence": 0.9813,
+          "probs": [
+            0.9813,
+            0.0067,
+            0.0076,
+            0.0045
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns. Authorities urged a mass exodus from several towns on the southeast coast, an area popular with tourists during the summer holiday season, warning that extreme heat forecast for the weekend will further stoke the fires. “The priority today is fighting fires and evacuating, getting people to safety,” Prime Minister Scott Morrison told reporters in Sydney. “There are parts of both Victoria and New South Wales which have been completely devastated, with a loss of power and communications.” Eight people have been killed by wildfires in NSW and Victoria since Monday and 18 are missing, officials said on Thursday. Following are highlights of what is happening across Australia: *Naval officials said they would open registration for evacuation on Thursday afternoon, with the HMAS Choules able to carry up to 1,000 people on the first trip. *”It’s 16-17 hours to the closest boat port, then we’ve got to come back,” HMAS Choules Commander Scott Houlihan said on Thursday afternoon. He said that leaving by boat was the onl [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "true",
+          "confidence": 0.9928,
+          "probs": [
+            0.9928,
+            0.0038,
+            0.0022,
+            0.0012
+          ],
+          "correct": false,
+          "evidence": "Fueled by searing temperatures and high winds, more than 200 fires are burning across the southeastern states of New South Wales (NSW) and Victoria, threatening several towns. It’s going to be a very difficult day,” NSW Rural Fire Service (RFS) Commissioner Shane Fitzsimmons said."
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "category": "consensus_failure",
+      "true_label": "unproven",
+      "claim": "Nathan Phillips falsely claimed to be a U.S. military veteran who served in the Vietnam War.",
+      "explanation": "What's true: Native American activist Nathan Phillips said he served in the U.S. Marines and told news outlets that he was a \"Vietnam-times\" or \"Vietnam-era\" veteran. What's false: Contrary to what multiple news reports initially stated, Nathan Phillips was not deployed to Vietnam at any time during his military service.",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "mixture",
+          "confidence": 0.6925,
+          "probs": [
+            0.0314,
+            0.2137,
+            0.0624,
+            0.6925
+          ],
+          "correct": false,
+          "evidence": "Phillips’s military service."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.5641,
+          "probs": [
+            0.0816,
+            0.2608,
+            0.0935,
+            0.5641
+          ],
+          "correct": false,
+          "evidence": "Mr. Phillips said he served in the U.S. Phillips’s military service. CNN Correction: This video states that Nathan Phillips is a Vietnam veteran. I’m what they call a recon ranger."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "mixture",
+          "confidence": 0.8271,
+          "probs": [
+            0.0294,
+            0.1185,
+            0.025,
+            0.8271
+          ],
+          "correct": false,
+          "evidence": "Mr. Phillips said he served in the U.S. Phillips’s military service. CNN Correction: This video states that Nathan Phillips is a Vietnam veteran. I’m what they call a recon ranger."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "mixture",
+          "confidence": 0.531,
+          "probs": [
+            0.0471,
+            0.1705,
+            0.2513,
+            0.531
+          ],
+          "correct": false,
+          "evidence": "Mr. Phillips said he served in the U.S. Phillips’s military service. CNN Correction: This video states that Nathan Phillips is a Vietnam veteran. I’m what they call a recon ranger."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "mixture",
+          "confidence": 0.7261,
+          "probs": [
+            0.0264,
+            0.1364,
+            0.1111,
+            0.7261
+          ],
+          "correct": false,
+          "evidence": "Phillips’s military service. CNN Correction: This video states that Nathan Phillips is a Vietnam veteran. Phillips told CNN he is a “Vietnam-era veteran.” Phillips told the New York Times that though he did serve in the military during the Vietnam War, he was not deployed to Vietnam."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "mixture",
+          "confidence": 0.6736,
+          "probs": [
+            0.0357,
+            0.1065,
+            0.1842,
+            0.6736
+          ],
+          "correct": false,
+          "evidence": "Phillips said he served in the U.S. Phillips’s military service. Phillips said he served in the military during the Vietnam era, he told The Times after publication that he was not deployed in Vietnam. CNN Correction: This video states that Nathan Phillips is a Vietnam veteran. Phillips told CNN he is a “Vietnam-era veteran.” Phillips told the New York Times that though he did serve in the military during the Vietnam War, he was not deployed to Vietnam."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "mixture",
+          "confidence": 0.7161,
+          "probs": [
+            0.0483,
+            0.1912,
+            0.0444,
+            0.7161
+          ],
+          "correct": false,
+          "evidence": "Mr. Phillips said he served in the U.S. Phillips’s military service. CNN Correction: This video states that Nathan Phillips is a Vietnam veteran. I’m what they call a recon ranger."
+        }
+      ]
+    },
+    {
+      "idx": 89,
+      "category": "consensus_failure",
+      "true_label": "mixture",
+      "claim": "For thousands of public employees, Wisconsin Gov. Scott Walker’s budget-repair bill would \"take away any say they have in the workplace, and eliminate their union.",
+      "explanation": "Wisconsin AFL-CIO says Gov. Scott Walker’s budget repair bill would take away all rights in the workplace for public employees",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.6732,
+          "probs": [
+            0.1669,
+            0.6732,
+            0.0093,
+            0.1505
+          ],
+          "correct": false,
+          "evidence": "The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.5176,
+          "probs": [
+            0.2398,
+            0.5176,
+            0.0028,
+            0.2398
+          ],
+          "correct": false,
+          "evidence": "Labor experts agree that Gov. Would workers \"take away any say\" in the workplace, as the ad claims? The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill. And that’s the ruling: ."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.5289,
+          "probs": [
+            0.1358,
+            0.5289,
+            0.0018,
+            0.3335
+          ],
+          "correct": false,
+          "evidence": "Labor experts agree that Gov. Would workers \"take away any say\" in the workplace, as the ad claims? The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill. And that’s the ruling: ."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4858,
+          "probs": [
+            0.2224,
+            0.4858,
+            0.0017,
+            0.2901
+          ],
+          "correct": false,
+          "evidence": "Labor experts agree that Gov. Would workers \"take away any say\" in the workplace, as the ad claims? The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill. And that’s the ruling: ."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.5653,
+          "probs": [
+            0.1564,
+            0.5653,
+            0.0028,
+            0.2755
+          ],
+          "correct": false,
+          "evidence": "A bill to take away any say they have in the workplace, and eliminate their union.\" The visual backdrop includes lines from news articles about Walker’s plan. Would workers \"take away any say\" in the workplace, as the ad claims? The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.4585,
+          "probs": [
+            0.1205,
+            0.4585,
+            0.1191,
+            0.3019
+          ],
+          "correct": false,
+          "evidence": "Scott Walker’s move to curtail collective bargaining rights for public employees is a dramatic departure from Wisconsin’s labor-friendly past. A bill to take away any say they have in the workplace, and eliminate their union.\" The visual backdrop includes lines from news articles about Walker’s plan. Among the snippets: A Milwaukee Journal Sentinel story that reads Walker’s plan would eliminate \"any say on benefits and work rules\" and an Associated Press story that reads \"all collective bargaining rights would be removed for state and local public employees.\" Is the ad correct that the plan would \"eliminate\" union representation for thousands and wipe out \"any say\" they have through collective bargaining. Would workers \"take away any say\" in the workplace, as the ad claims? The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill."
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.6323,
+          "probs": [
+            0.1837,
+            0.6323,
+            0.0216,
+            0.1624
+          ],
+          "correct": false,
+          "evidence": "Labor experts agree that Gov. Would workers \"take away any say\" in the workplace, as the ad claims? The AFL-CIO ad claims \"thousands\" of workers, including teachers, would lose all say in the workplace and see their union eliminated under Walker’s budget-repair bill. And that’s the ruling: ."
+        }
+      ]
+    },
+    {
+      "idx": 141,
+      "category": "consensus_failure",
+      "true_label": "mixture",
+      "claim": "The stimulus includes \"$219,000 to study the sex lives of female college freshmen.",
+      "explanation": "McConnell claims stimulus includes $219,000 to study the sex lives of female college freshmen",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.6057,
+          "probs": [
+            0.1297,
+            0.6057,
+            0.004,
+            0.2605
+          ],
+          "correct": false,
+          "evidence": "In this item, we look at McConnell's claim that the stimulus includes \"$219,000 to study the sex lives of female college freshmen.\" We couldn't resist checking this one out.Especially after reading a Sept. 8, 2009, story in the (Syracuse) Daily Orange, that begins, \"Five hundred Syracuse University freshmen will divulge the details of their sex lives as part of a women's health study\" ... paid for with $219,000 in stimulus funds.Alas, the academic rendering of the study on the government's stimulus Web site, recovery.gov, doesn't read nearly as provocatively:\"Scientific Rationale: The transition from adolescence to adulthood involves important developmental challenges."
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.5191,
+          "probs": [
+            0.2259,
+            0.5191,
+            0.0059,
+            0.2491
+          ],
+          "correct": false,
+          "evidence": "Although Carey applied to the National Institutes of Health for funding long before the stimulus was even being considered, he said stimulus funds are appropriate for the study. \"As for the jobs, there won't be many direct ones. While McConnell's characterization of the study packs a good political punch, we think the actual study isn't nearly as ... sexy ... as he makes it out to be. It's a public health study."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4999,
+          "probs": [
+            0.1466,
+            0.4999,
+            0.0017,
+            0.3517
+          ],
+          "correct": false,
+          "evidence": "Although Carey applied to the National Institutes of Health for funding long before the stimulus was even being considered, he said stimulus funds are appropriate for the study. \"As for the jobs, there won't be many direct ones. While McConnell's characterization of the study packs a good political punch, we think the actual study isn't nearly as ... sexy ... as he makes it out to be. It's a public health study."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4262,
+          "probs": [
+            0.1944,
+            0.4262,
+            0.0032,
+            0.3762
+          ],
+          "correct": false,
+          "evidence": "Although Carey applied to the National Institutes of Health for funding long before the stimulus was even being considered, he said stimulus funds are appropriate for the study. \"As for the jobs, there won't be many direct ones. While McConnell's characterization of the study packs a good political punch, we think the actual study isn't nearly as ... sexy ... as he makes it out to be. It's a public health study."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.4638,
+          "probs": [
+            0.1471,
+            0.4638,
+            0.0046,
+            0.3845
+          ],
+          "correct": false,
+          "evidence": "In this item, we look at McConnell's claim that the stimulus includes \"$219,000 to study the sex lives of female college freshmen.\" We couldn't resist checking this one out.Especially after reading a Sept. 8, 2009, story in the (Syracuse) Daily Orange, that begins, \"Five hundred Syracuse University freshmen will divulge the details of their sex lives as part of a women's health study\" ... paid for with $219,000 in stimulus funds.Alas, the academic rendering of the study on the government's stimulus Web site, recovery.gov, doesn't read nearly as provocatively:\"Scientific Rationale: The transition from adolescence to adulthood involves important developmental challenges. Although Carey applied to the National Institutes of Health for funding long before the stimulus was even being considered, he said stimulus funds are appropriate for the study. It's a public health study."
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.495,
+          "probs": [
+            0.1282,
+            0.495,
+            0.0258,
+            0.351
+          ],
+          "correct": false,
+          "evidence": "\" But Senate Republican Leader Mitch McConnell put out a press release titled \"Stimulus Anniversary Gifts to Taxpayers: One Year of Spending Taxpayer Dollars Studying Malt Liquor and Marijuana, Researching Drunk Mice, Funding Martini Bars and Steakhouses, and Examining Facebook.\" It lists 15 stimulus projects. In this item, we look at McConnell's claim that the stimulus includes \"$219,000 to study the sex lives of female college freshmen.\" We couldn't resist checking this one out.Especially after reading a Sept. 8, 2009, story in the (Syracuse) Daily Orange, that begins, \"Five hundred Syracuse University freshmen will divulge the details of their sex lives as part of a women's health study\" ... paid for with $219,000 in stimulus funds.Alas, the academic rendering of the study on the government's stimulus Web site, recovery.gov, doesn't read nearly as provocatively:\"Scientific Rationale: The transition from adolescence to adulthood involves important developmental challenges. \"The Women's Health Project includes sexual behavior … because of the increasing recognition that social and health problems are linked to sexual behavior … and that there has been little scientific study of th [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5786,
+          "probs": [
+            0.2412,
+            0.5786,
+            0.0078,
+            0.1724
+          ],
+          "correct": false,
+          "evidence": "Although Carey applied to the National Institutes of Health for funding long before the stimulus was even being considered, he said stimulus funds are appropriate for the study. \"As for the jobs, there won't be many direct ones. While McConnell's characterization of the study packs a good political punch, we think the actual study isn't nearly as ... sexy ... as he makes it out to be. It's a public health study."
+        }
+      ]
+    },
+    {
+      "idx": 153,
+      "category": "consensus_failure",
+      "true_label": "mixture",
+      "claim": "As a state rep, I was considered the fourth-most conservative in the Legislature.”",
+      "explanation": "Supreme Court candidate Green, former state rep, says he was fourth-most conservative",
+      "predictions": [
+        {
+          "experiment": "weighted_k1",
+          "pred_label": "false",
+          "confidence": 0.6169,
+          "probs": [
+            0.1494,
+            0.6169,
+            0.0041,
+            0.2296
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so?"
+        },
+        {
+          "experiment": "focal_dynamic",
+          "pred_label": "false",
+          "confidence": 0.4806,
+          "probs": [
+            0.2593,
+            0.4806,
+            0.0029,
+            0.2572
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so? That measure did not become law. Neither became law. He omits the fact that he was not considered fourth-most conservative in his second term, according to the group."
+        },
+        {
+          "experiment": "weighted_dynamic",
+          "pred_label": "false",
+          "confidence": 0.5497,
+          "probs": [
+            0.1474,
+            0.5497,
+            0.0017,
+            0.3012
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so? That measure did not become law. Neither became law. He omits the fact that he was not considered fourth-most conservative in his second term, according to the group."
+        },
+        {
+          "experiment": "focal_oversample",
+          "pred_label": "false",
+          "confidence": 0.4351,
+          "probs": [
+            0.2239,
+            0.4351,
+            0.0022,
+            0.3388
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so? That measure did not become law. Neither became law. He omits the fact that he was not considered fourth-most conservative in his second term, according to the group."
+        },
+        {
+          "experiment": "weighted_k3",
+          "pred_label": "false",
+          "confidence": 0.5485,
+          "probs": [
+            0.1535,
+            0.5485,
+            0.0044,
+            0.2936
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so? Senators were rated separately, leaving Green's statement open to interpretation whether he was claiming to be the fourth-most conservative in the whole Legislature (which would be an overstatement) or just the House (which was accurate).The report lists 28 criteria that define how positions were identified as conservative, including if legislation made government more efficient, strengthened the family's importance as the foundation of the nation, reduced the overall tax burden or protected a citizen's ability to make a living.In summarizing its ratings, the group highlighted 12 votes on topics ranging from property taxes to abortion to standardized testing.One vote was on a bill that would have expanded the state's hate crimes law by, among other things, enhancing criminal penalties and specifying which groups would be protected against bias crimes, including those targeted because of their \"race, color, disability, religion, natio [...]"
+        },
+        {
+          "experiment": "weighted_k5",
+          "pred_label": "false",
+          "confidence": 0.5321,
+          "probs": [
+            0.1263,
+            0.5321,
+            0.0325,
+            0.3092
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so? To evaluate House members, a panel chose 64 votes on \"economic, social, governmental and education issues\" that the group said “showed signs of a liberal or conservative philosophy.” Lawmakers were graded based on the number of times they voted with the conservative position.Green and two other members of the 150-member House voted the group's preferred way 88 percent of the time; only three members leaned the group's way more often. (The average score was 43 percent.) By that measure, Green shared the “fourth-most conservative” honors with GOP Reps. Senators were rated separately, leaving Green's statement open to interpretation whether he was claiming to be the fourth-most conservative in the whole Legislature (which would be an overstatement) or just the House (which was accurate).The report lists 28 criteria that define how positions were identified as conservative, including if legislation made government more efficient, strengt [...]"
+        },
+        {
+          "experiment": "baseline",
+          "pred_label": "false",
+          "confidence": 0.5908,
+          "probs": [
+            0.2396,
+            0.5908,
+            0.0124,
+            0.1572
+          ],
+          "correct": false,
+          "evidence": "According to a video of his Jan. 14 Montgomery County remarks posted on his campaign Web site, Green encouraged listeners to check his House history, saying: \"As a state rep, I was considered the fourth-most conservative in the Legislature.”Is that so? That measure did not become law. Neither became law. He omits the fact that he was not considered fourth-most conservative in his second term, according to the group."
+        }
+      ]
+    }
+  ]
+}

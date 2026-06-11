@@ -1,0 +1,45 @@
+[project]
+name = "health-fake-news-detection"
+version = "0.1.0"
+description = "Health fake-news detection on PubHealth: RoBERTa + evidence ranking with class-imbalance handling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "transformers>=4.30",
+    "scikit-learn>=1.2",
+    "pandas>=2.0",
+    "datasets>=2.14",
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "nbmake>=1.4",
+    "ruff>=0.4",
+    "jupyter>=1.0",
+]
+
+# The source tree is imported via route blocks (sys.path -> src) following STYLE.md
+# rather than as an installed package, so no build backend or __init__.py is required
+# Editable install (pip install -e .[dev]) still works through setuptools discovery
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]            # Lets tests import detection.* without __init__.py
+testpaths = ["tests"]
+markers = [
+    "integration: tests that need the roberta-base tokenizer or network access",
+]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

@@ -1,0 +1,13 @@
+{
+  "name": "weighted_k3",
+  "description": "Inverse-frequency weighted cross-entropy with top-3 evidence",
+  "loss": "ce",
+  "use_class_weights": true,
+  "weight_temperature": 1.0,
+  "evidence_mode": "topk",
+  "top_k": 3,
+  "gamma_per_class": null,
+  "oversample_factors": null,
+  "epochs": 10,
+  "epochs_ablation": 5
+}

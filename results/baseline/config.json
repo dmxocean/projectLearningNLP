@@ -1,0 +1,13 @@
+{
+  "name": "baseline",
+  "description": "Unweighted cross-entropy baseline with dynamic evidence",
+  "loss": "ce",
+  "use_class_weights": false,
+  "weight_temperature": null,
+  "evidence_mode": "dynamic",
+  "top_k": null,
+  "gamma_per_class": null,
+  "oversample_factors": null,
+  "epochs": 10,
+  "epochs_ablation": 5
+}

@@ -1,0 +1,13 @@
+{
+  "name": "weighted_dynamic",
+  "description": "Inverse-frequency weighted cross-entropy with dynamic evidence",
+  "loss": "ce",
+  "use_class_weights": true,
+  "weight_temperature": 1.0,
+  "evidence_mode": "dynamic",
+  "top_k": null,
+  "gamma_per_class": null,
+  "oversample_factors": null,
+  "epochs": 10,
+  "epochs_ablation": 5
+}
